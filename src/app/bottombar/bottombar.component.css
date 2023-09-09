@@ -1,5 +1,6 @@
 .bottom_bar {
-    position: absolute;
+    background-color: white;
+    position: fixed;
     bottom: 0px;
     width:100%;
     display: flex;
