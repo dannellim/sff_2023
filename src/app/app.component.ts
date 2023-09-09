@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'sff_2023';
+  title = 'Welcome to';
+  subtitle = 'Crédit Agricole Group'
+  info = 'Financial Services'
 }

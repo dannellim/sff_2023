@@ -1,5 +1,12 @@
 .center_div {
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
+}
+
+.base_page {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
 }
