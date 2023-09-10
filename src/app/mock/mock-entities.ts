@@ -1,11 +1,11 @@
 import { Entity } from "../models/entity";
 
 export const ENTITIES: Entity[] = [
-    {
-        id: 1, image: 'credit_agricole_group', name: 'Crédit Agricole Group',
-        summary: "Crédit Agricole Group, sometimes called La banque verte (English: The green bank) due to its historical ties to farming, is a French international banking group and the world's largest cooperative financial institution.",
-        description: ""
-    },
+    // {
+    //     id: 1, image: 'credit_agricole_group', name: 'Crédit Agricole Group',
+    //     summary: "Crédit Agricole Group, sometimes called La banque verte (English: The green bank) due to its historical ties to farming, is a French international banking group and the world's largest cooperative financial institution.",
+    //     description: ""
+    // },
     {
         id: 2, image: 'amundi', name: 'Amundi',
         summary: "Amundi is a French asset management company. With €2 trillion of assets under management (AUM) at the end of 2021, it is the largest asset manager in Europe and one of the 10 biggest investment managers in the world.",
