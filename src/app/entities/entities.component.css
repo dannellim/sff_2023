@@ -45,3 +45,8 @@ img {
     text-align: justify;
     text-justify: inter-word;
 }
+
+a {
+    color: #000000;
+    text-decoration: none;
+}

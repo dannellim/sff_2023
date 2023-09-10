@@ -1,10 +1,10 @@
-<div *ngIf="entity">
+<div *ngIf="selectedEntity">
     <div class="entity_image">
-        <img src="assets/images/{{entity.image}}.svg" alt="{{entity.image}}">
+        <img src="assets/images/{{selectedEntity.image}}.svg" alt="{{selectedEntity.image}}">
     </div>
     <div class="entity_text">
-        <label>{{entity.name}}</label>
+        <label>{{selectedEntity.name}}</label>
         <br>
-        <label>{{entity.description}}</label>
+        <label>{{selectedEntity.description}}</label>
     </div>
 </div>
