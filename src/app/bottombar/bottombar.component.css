@@ -7,3 +7,9 @@
     height: 40px;
     justify-content: center;
 }
+
+.bottom_icon {
+    float:left;
+    width:24%;
+    margin-right:1%;
+}
