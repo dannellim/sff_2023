@@ -8,6 +8,7 @@ import { EntitiesComponent } from './entities/entities.component';
 import { EntityDetailComponent } from './entity-detail/entity-detail.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,13 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
     AppRoutingModule,
     QRCodeModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: APP_BASE_HREF,
+      useFactory: (s: PlatformLocation) => s.getBaseHrefFromDOM(),
+      deps: [PlatformLocation]
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

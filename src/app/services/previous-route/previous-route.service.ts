@@ -1,3 +1,4 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { Injectable } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -11,7 +12,7 @@ export class PreviousRouteService {
   private baseUrl: string;
 
   constructor(private router: Router) {
-    this.baseUrl = document.location.href;
+    this.baseUrl = document.location.href + APP_BASE_HREF;
     this.previousUrl = this.baseUrl + this.router.url;
     this.currentUrl = this.baseUrl + this.router.url;
     router.events.subscribe(event => {
