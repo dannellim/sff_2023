@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-bottombar',
   templateUrl: './bottombar.component.html',
@@ -17,5 +16,8 @@ export class BottombarComponent {
   }
   goHome(): void {
     this.router.navigate(['/']);
+  }
+  share(): void {
+    this.router.navigate(['/qrcode']);
   }
 }
