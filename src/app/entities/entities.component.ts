@@ -8,9 +8,13 @@ import { ENTITIES } from '../mock/mock-entities';
   styleUrls: ['./entities.component.css']
 })
 export class EntitiesComponent {
-  entities = ENTITIES;
+  entities = ENTITIES.slice(1);
+  groupEntity = ENTITIES[0];
   selectedEntity?: Entity;
   onSelect(entity: Entity): void {
     this.selectedEntity = entity;
+  }
+  onSelectGroup(): void {
+    this.selectedEntity = this.groupEntity;
   }
 }

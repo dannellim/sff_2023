@@ -1,3 +1,12 @@
+<div (click)="onSelectGroup()">
+    <div class="center_div">
+        <img src="assets/images/{{groupEntity.image}}.svg">
+    </div>
+    <div class="center_div">
+        <p class="summary_text">{{groupEntity.description}}</p>
+    </div>
+</div>
+<br>
 <ul class="entity_list">
     <li *ngFor="let entity of entities">
         <div class="entity_container" (click)="onSelect(entity)">

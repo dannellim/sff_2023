@@ -29,3 +29,19 @@ img {
     align-items: center;
     justify-content: center
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.center_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.summary_text {
+    text-align: justify;
+    text-justify: inter-word;
+}
