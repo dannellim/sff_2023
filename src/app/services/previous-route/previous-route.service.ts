@@ -11,7 +11,7 @@ export class PreviousRouteService {
   private baseUrl: string;
 
   constructor(private router: Router) {
-    this.baseUrl = window.location.href;
+    this.baseUrl = document.location.href;
     this.previousUrl = this.baseUrl + this.router.url;
     this.currentUrl = this.baseUrl + this.router.url;
     router.events.subscribe(event => {
@@ -21,7 +21,9 @@ export class PreviousRouteService {
       };
     });
   }
-
+  public getCurrentUrl(): string{
+    return document.location.origin;
+  }
   public getPreviousUrl() {
     return this.previousUrl;
   }

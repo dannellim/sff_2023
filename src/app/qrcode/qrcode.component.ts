@@ -11,17 +11,16 @@ export class QrcodeComponent {
   constructor(
     private previousRouteService: PreviousRouteService
   ) {
-    this.myAngularxQrCode = window.location.href;//this.getPrevUrl(this.previousRouteService.getPreviousUrl());
+    this.myAngularxQrCode = this.getPrevUrl(this.previousRouteService.getCurrentUrl());
   }
   ngOnInit() {
-    console.log(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
+    console.log(this.getPrevUrl(this.previousRouteService.getCurrentUrl()));
   }
   getPrevUrl(input: string): string {
     input = input.replace('qrcode','');
     return input;
   }
   share(): void {
-    // shareLink(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
-    shareLink(window.location.href);
+    shareLink(this.getPrevUrl(this.previousRouteService.getCurrentUrl()));
   }
 }
