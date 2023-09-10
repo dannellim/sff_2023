@@ -1,9 +1,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<div class="base_page">
-    <div [@routeAnimations]="getRouteAnimationData()">
-        <router-outlet></router-outlet>
-    </div>
+<div class="base_page" [@routeAnimations]="getRouteAnimationData()">
+    <router-outlet></router-outlet>
 </div>
 <app-bottombar></app-bottombar>
