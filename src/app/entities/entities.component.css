@@ -1,0 +1,28 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entity_image {
+    flex: 30%;
+    padding: 8px;
+}
+
+.entity_text {
+    flex: 70%;
+    padding: 8px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.entity_container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

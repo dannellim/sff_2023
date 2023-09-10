@@ -1,1 +1,14 @@
-<p>entities works!</p>
+<ul class="entity_list">
+    <li *ngFor="let entity of entities">
+        <div class="entity_container">
+            <div class="entity_image">
+                <img src="assets/images/{{entity.image}}.svg" alt="{{entity.image}}">
+            </div>
+            <div class="entity_text">
+                <p><b>{{entity.name}}</b></p>
+                <p>{{entity.summary}}</p>
+            </div>
+            <br>
+        </div>
+    </li>
+</ul>

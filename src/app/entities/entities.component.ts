@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Entity } from '../models/entity';
+import { ENTITIES } from '../mock/mock-entities';
 
 @Component({
   selector: 'app-entities',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./entities.component.css']
 })
 export class EntitiesComponent {
-
+  entities = ENTITIES;
 }
