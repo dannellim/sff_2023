@@ -10,12 +10,13 @@ img {
 }
 
 .entity_image {
-    flex: 30%;
+    flex: 25%;
     padding: 8px;
+    text-align: center;
 }
 
 .entity_text {
-    flex: 70%;
+    flex: 75%;
     padding: 8px;
     text-align: justify;
     text-justify: inter-word;
