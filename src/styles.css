@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.filter-primary-color{
+    filter: invert(29%) sepia(15%) saturate(3662%) hue-rotate(124deg) brightness(94%) contrast(101%);
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
