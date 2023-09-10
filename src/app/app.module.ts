@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BottombarComponent } from './bottombar/bottombar.component';
 import { EntitiesComponent } from './entities/entities.component';
+import { EntityDetailComponent } from './entity-detail/entity-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottombarComponent,
-    EntitiesComponent
+    EntitiesComponent,
+    EntityDetailComponent
   ],
   imports: [
     BrowserModule,
