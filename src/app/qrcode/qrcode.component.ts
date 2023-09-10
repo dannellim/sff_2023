@@ -11,7 +11,7 @@ export class QrcodeComponent {
   constructor(
     private previousRouteService: PreviousRouteService
   ) {
-    this.myAngularxQrCode = this.getPrevUrl(this.previousRouteService.getPreviousUrl());
+    this.myAngularxQrCode = window.location.href;//this.getPrevUrl(this.previousRouteService.getPreviousUrl());
   }
   ngOnInit() {
     console.log(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
