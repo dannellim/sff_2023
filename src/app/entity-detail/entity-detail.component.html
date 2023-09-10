@@ -1,1 +1,10 @@
-<p>entity-detail works!</p>
+<div *ngIf="entity">
+    <div class="entity_image">
+        <img src="assets/images/{{entity.image}}.svg" alt="{{entity.image}}">
+    </div>
+    <div class="entity_text">
+        <label>{{entity.name}}</label>
+        <br>
+        <label>{{entity.description}}</label>
+    </div>
+</div>

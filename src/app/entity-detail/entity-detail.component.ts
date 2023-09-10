@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Entity } from '../models/entity';
 
 @Component({
   selector: 'app-entity-detail',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./entity-detail.component.css']
 })
 export class EntityDetailComponent {
-
+  @Input() entity?: Entity;
 }
