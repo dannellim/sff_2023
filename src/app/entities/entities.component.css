@@ -10,7 +10,7 @@ img {
 }
 
 .chevron_right {
-    margin-left: auto;
+    flex: 5%;
 }
 
 .entity_image {
@@ -20,7 +20,7 @@ img {
 }
 
 .entity_text {
-    flex: 75%;
+    flex: 70%;
     padding: 8px;
 }
 
