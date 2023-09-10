@@ -1,0 +1,11 @@
+
+.entity_image {
+    flex: 25%;
+    padding: 8px;
+    text-align: center;
+}
+
+.entity_text {
+    flex: 70%;
+    padding: 8px;
+}
