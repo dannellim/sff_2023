@@ -7,3 +7,19 @@ a {
     color: #000000;
     text-decoration: none;
 }
+
+/* simple animation - if needed*/
+/* @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  router-outlet + * {
+    display: block;
+    animation: fade 1s;
+  } */
+  
