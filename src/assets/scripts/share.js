@@ -1,7 +1,9 @@
-function shareLink() {
+function shareLink(url) {
     if (navigator.share) {
-        let url = document.referrer;
         console.log(`Previously visited page URL: ${url}`);
+        // navigator.share({
+        //     text: url,
+        // })
         navigator.share({
             title: document.title,
             text: "DISCOVER THE CRÉDIT AGRICOLE GROUP",
