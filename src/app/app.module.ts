@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { BottombarComponent } from './bottombar/bottombar.component';
 import { EntitiesComponent } from './entities/entities.component';
 import { EntityDetailComponent } from './entity-detail/entity-detail.component';
+import { QRCodeModule } from 'angularx-qrcode';
+import { QrcodeComponent } from './qrcode/qrcode.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BottombarComponent,
     EntitiesComponent,
-    EntityDetailComponent
+    EntityDetailComponent,
+    QrcodeComponent
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    QRCodeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

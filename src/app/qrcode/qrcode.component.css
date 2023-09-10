@@ -1,0 +1,12 @@
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+P {
+    margin-left: 8px;
+}
+
+.container {
+    padding: 40% 0;
+}
