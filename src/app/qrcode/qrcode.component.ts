@@ -21,6 +21,7 @@ export class QrcodeComponent {
     return input;
   }
   share(): void {
-    shareLink(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
+    // shareLink(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
+    shareLink(window.location.href);
   }
 }
