@@ -28,7 +28,7 @@ export const ENTITIES: Entity[] = [
     },
     {
         id: 6, image: 'iwm', name: 'Indosuez Wealth Management',
-        summary: "Indosuez Wealth Management supports its clients residing in Singapore with the creation, protection, management and transmission of their wealth.",
+        summary: "Indosuez Wealth Management supports its clients residing in Singapore with the creation, protection, management and transmission of their wealth. With 130 billion euros in assets under management (as of 31/12/2022), Indosuez Wealth Management is one of the world's leading wealth management companies.",
         description: ""
     },
 ];
