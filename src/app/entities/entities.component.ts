@@ -9,4 +9,8 @@ import { ENTITIES } from '../mock/mock-entities';
 })
 export class EntitiesComponent {
   entities = ENTITIES;
+  selectedEntity?: Entity;
+  onSelect(entity: Entity): void {
+    this.selectedEntity = entity;
+  }
 }

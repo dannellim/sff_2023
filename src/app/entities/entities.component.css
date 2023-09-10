@@ -9,6 +9,10 @@ img {
     height: auto;
 }
 
+.chevron_right {
+    margin-left: auto;
+}
+
 .entity_image {
     flex: 25%;
     padding: 8px;
@@ -18,8 +22,6 @@ img {
 .entity_text {
     flex: 75%;
     padding: 8px;
-    text-align: justify;
-    text-justify: inter-word;
 }
 
 .entity_container {
