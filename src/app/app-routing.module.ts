@@ -5,8 +5,8 @@ import { EntityDetailComponent } from './entity-detail/entity-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/entities', pathMatch: 'full' },
-  { path: 'entities', component: EntitiesComponent },
-  { path: 'entity/:id', component: EntityDetailComponent },
+  { path: 'entities', component: EntitiesComponent, data: { animation: 'entitiesPage' } },
+  { path: 'entity/:id', component: EntityDetailComponent , data: { animation: 'entityPage' }},
 ];
 
 @NgModule({
