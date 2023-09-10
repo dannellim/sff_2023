@@ -1,10 +1,7 @@
 function shareLink() {
     if (navigator.share) {
-        let url = document.location.href;
-        const canonicalElement = document.querySelector('link[rel=canonical]');
-        if (canonicalElement !== null) {
-            url = canonicalElement.href;
-        }
+        let url = document.referrer;
+        console.log(`Previously visited page URL: ${url}`);
         navigator.share({
             title: document.title,
             text: "DISCOVER THE CRÉDIT AGRICOLE GROUP",
