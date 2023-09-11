@@ -7,20 +7,20 @@ declare function shareLink(url: string): void;
   styleUrls: ['./qrcode.component.css']
 })
 export class QrcodeComponent {
-  myAngularxQrCode: string;
+  private myAngularxQrCode: string;
   constructor(
     private previousRouteService: PreviousRouteService
   ) {
     this.myAngularxQrCode = this.getPrevUrl(this.previousRouteService.getPreviousUrl());
   }
   ngOnInit() {
-    console.log(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
+    console.log(this.myAngularxQrCode);
   }
   getPrevUrl(input: string): string {
     input = input.replace('qrcode','');
     return input;
   }
   share(): void {
-    shareLink(this.getPrevUrl(this.previousRouteService.getPreviousUrl()));
+    shareLink(this.myAngularxQrCode);
   }
 }
