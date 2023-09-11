@@ -7,8 +7,9 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
 const routes: Routes = [
   { path: '', redirectTo: '/entities', pathMatch: 'full' },
   { path: 'entities', component: EntitiesComponent, data: { animation: 'entitiesPage' } },
-  { path: 'entity/:id', component: EntityDetailComponent , data: { animation: 'entityPage' }},
-  { path: 'qrcode', component: QrcodeComponent , data: { animation: 'qrcodePage' }},
+  { path: 'entity/:id', component: EntityDetailComponent, data: { animation: 'entityPage' } },
+  { path: 'qrcode/:url', component: QrcodeComponent, data: { animation: 'qrcodePage' } },
+  { path: 'qrcode', redirectTo: '/entities' },
 ];
 
 @NgModule({
