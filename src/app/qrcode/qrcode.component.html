@@ -1,9 +1,4 @@
-<div class="container">
-    <div class="center">
-        <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'" imageSrc="assets/images/credit_agricole_logo.png"></qrcode>
-    </div>
-    <div class="center" (click)="share()">
-        <img src="assets/icons/ios_share.svg" class="filter-primary-color">
-        <p>Scan the QR Code or click here to share with your contacts.</p>
-    </div>
+<div (click)="share()">
+    <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'" imageSrc="assets/images/credit_agricole_logo.png"></qrcode>
+    <p>Scan or click the QR Code to share</p>
 </div>
