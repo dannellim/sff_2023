@@ -15,12 +15,9 @@ export class PreviousRouteService {
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         this.previousUrl = this.currentUrl;
-        this.currentUrl = location.href + event.url;
+        this.currentUrl = location.href;
       };
     });
-  }
-  public getCurrentUrl(): string {
-    return this.currentUrl;
   }
   public getPreviousUrl() {
     return this.previousUrl;
