@@ -7,7 +7,7 @@ declare function shareLink(url: string): void;
   styleUrls: ['./qrcode.component.css']
 })
 export class QrcodeComponent {
-  private myAngularxQrCode: string;
+  myAngularxQrCode: string;
   constructor(
     private previousRouteService: PreviousRouteService
   ) {
