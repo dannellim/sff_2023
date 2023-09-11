@@ -1,19 +1,16 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 import { Entity } from '../models/entity';
 import { ENTITIES } from '../mock/mock-entities';
 import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-entity-detail',
   templateUrl: './entity-detail.component.html',
   styleUrls: ['./entity-detail.component.css']
 })
+
 export class EntityDetailComponent {
-  constructor(
-    private route: ActivatedRoute,
-    private location: Location
-  ) { }
+  constructor(private route: ActivatedRoute) { }
   ngOnInit(): void {
     this.getEntity();
   }
