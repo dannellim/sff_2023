@@ -1,1 +1,0 @@
-function shareLink(e){navigator.share?(console.log(`Previously visited page URL: ${e}`),navigator.share({title:document.title,text:"DISCOVER THE CR\xc9DIT AGRICOLE GROUP",url:e}).then(()=>console.log("Successful share")).catch(o=>console.log("Error sharing:",o))):console.log("sharing not allowed")}
