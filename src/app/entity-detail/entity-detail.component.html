@@ -1,9 +1,10 @@
 <div *ngIf="selectedEntity">
     <div class="entity_image">
-        <img src="assets/images/{{selectedEntity.image}}.svg" alt="{{selectedEntity.image}}">
+        <img src="assets/images/{{selectedEntity.image}}" alt="{{selectedEntity.image}}">
     </div>
     <div class="entity_text">
         <p><b>{{selectedEntity.name}}</b></p>
+        <p>{{selectedEntity.summary}}</p>
         <p>{{selectedEntity.description}}</p>
     </div>
 </div>
