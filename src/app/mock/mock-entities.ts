@@ -27,8 +27,8 @@ export const ENTITIES: Entity[] = [
         summary: "Asset Servicing​"
     },
     {
-        id: 6, image: 'iwm_brown.png', name: 'Indosuez Wealth Management',
+        id: 6, image: 'iwm_brown.svg', name: 'Indosuez Wealth Management',
         description: "Indosuez Wealth Management is the global wealth management brand of Crédit Agricole Group, ranked 10th largest bank in the world based on balance sheet (The Banker 2022). We bring families and entrepreneurs a human-scale organization backed by one of Europe’s largest and most robust universal banking groups. Shaped by more than 145 years of experience supporting families and entrepreneurs around the world, Indosuez Wealth Management offers a tailor-made approach that allows our clients to protect and develop their wealth in alignment with their aspirations. Its teams take a comprehensive view and provide expert advice and exceptional service, offering a wide range of services for the management of both personal and business assets.​ Renowned for its international reach combined with a human scale, Indosuez Wealth Management employs about 3,000 people in Europe, Asia-Pacific and the Middle East.​",
-        summary: "Access to key Asian markets • Asian mandates and local currencies • Private equity • Credit solutions • Wealth structuring • Discretionary portfolio management • Mutual funds • Structured products • Advisory mandates • Hedge funds advisory mandates • Forex and precious metals • Insurance premium financing (IPF) • Sustainable investing (ESG)​"
+        summary: "Credit solutions, Wealth structuring, Discretionary portfolio management, Hedge funds advisory mandates, Insurance premium financing (IPF), Sustainable investing (ESG)​"
     },
 ];
