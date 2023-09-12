@@ -1,3 +1,8 @@
+# Deployment Instructions
+
+ng build --output-path docs  --base-href /sff_2023/ 
+cp /docs/index.html /docs/404.html
+
 # Website
 
 https://dannellim.github.io/sff_2023/
