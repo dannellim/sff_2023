@@ -8,4 +8,5 @@
 .entity_text {
     flex: 70%;
     padding: 8px;
+    white-space: pre-line;
 }
