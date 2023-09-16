@@ -1,15 +1,15 @@
 import { Injectable } from '@angular/core';
 import { Entity } from 'src/app/models/entity';
-import { ENTITIES } from '../../mock/mock-entities';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { Constants } from 'src/app/constants';
 
 @Injectable({
   providedIn: 'root'
 })
 export class EntityService {
-  constructor() { }
+  constructor(private http: HttpClient) { }
   getEntities(): Observable<Entity[]> {
-    const entities = of(ENTITIES);
-    return entities;
+    return this.http.get<Entity[]>(Constants.ENTITIES_APL)
   }
 }

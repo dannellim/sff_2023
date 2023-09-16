@@ -8,14 +8,14 @@ import { EntityService } from '../services/entity-service/entity.service';
   styleUrls: ['./entities.component.css']
 })
 export class EntitiesComponent {
-  constructor(private entityService: EntityService) {}
+  constructor(private entityService: EntityService) { }
   entities: Entity[] = [];
   groupEntity!: Entity;
   ngOnInit(): void {
     this.getEntities();
   }
-  getEntities() : void {
+  getEntities(): void {
     this.entityService.getEntities()
-      .subscribe(entities =>{ this.entities = entities; this.groupEntity = entities[0]; });
+      .subscribe(entities => { this.entities = entities; this.groupEntity = entities[0]; });
   }
 }

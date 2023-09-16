@@ -8,6 +8,7 @@ import { EntitiesComponent } from './entities/entities.component';
 import { EntityDetailComponent } from './entity-detail/entity-detail.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    QRCodeModule
+    QRCodeModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
