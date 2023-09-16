@@ -20,4 +20,7 @@ export class BottombarComponent {
   share(): void {
     this.router.navigate(['/qrcode', location.href]);
   }
+  contact(): void {
+    this.router.navigate(['/contact']);
+  }
 }

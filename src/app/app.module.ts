@@ -9,6 +9,7 @@ import { EntityDetailComponent } from './entity-detail/entity-detail.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     BottombarComponent,
     EntitiesComponent,
     EntityDetailComponent,
-    QrcodeComponent
+    QrcodeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserAnimationsModule,
