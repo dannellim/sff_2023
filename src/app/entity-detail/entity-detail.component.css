@@ -10,3 +10,7 @@
     padding: 8px;
     white-space: pre-line;
 }
+
+a:link {
+    text-decoration: underline;
+}
