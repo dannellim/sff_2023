@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { ENTITIES } from '../mock/mock-entities';
+import { Entity } from '../models/entity';
+import { EntityService } from '../services/entity-service/entity.service';
 
 @Component({
   selector: 'app-entities',
@@ -7,6 +8,14 @@ import { ENTITIES } from '../mock/mock-entities';
   styleUrls: ['./entities.component.css']
 })
 export class EntitiesComponent {
-  entities = ENTITIES.slice(1);
-  groupEntity = ENTITIES[0];
+  constructor(private entityService: EntityService) {}
+  entities: Entity[] = [];
+  groupEntity!: Entity;
+  ngOnInit(): void {
+    this.getEntities();
+  }
+  getEntities() : void {
+    this.entityService.getEntities()
+      .subscribe(entities =>{ this.entities = entities; this.groupEntity = entities[0]; });
+  }
 }

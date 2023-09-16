@@ -4,4 +4,7 @@ export interface Entity {
     name: string;
     summary: string;
     description: string;
+    website: string;
+    contact: string;
+    linkedIn: string;
   }
