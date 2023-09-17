@@ -10,6 +10,7 @@ import { QRCodeModule } from 'angularx-qrcode';
 import { QrcodeComponent } from './qrcode/qrcode.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AppRoutingModule,
     QRCodeModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
