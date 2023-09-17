@@ -8,6 +8,9 @@ import { EntitiesComponent } from './entities/entities.component';
 import { EntityDetailComponent } from './entity-detail/entity-detail.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrcodeComponent } from './qrcode/qrcode.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -15,13 +18,16 @@ import { QrcodeComponent } from './qrcode/qrcode.component';
     BottombarComponent,
     EntitiesComponent,
     EntityDetailComponent,
-    QrcodeComponent
+    QrcodeComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserAnimationsModule,
     BrowserModule,
     AppRoutingModule,
-    QRCodeModule
+    QRCodeModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
