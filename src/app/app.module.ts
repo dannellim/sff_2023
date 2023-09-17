@@ -8,9 +8,11 @@ import { EntitiesComponent } from './components/entities/entities.component';
 import { EntityDetailComponent } from './components/entity-detail/entity-detail.component';
 import { QRCodeModule } from 'angularx-qrcode';
 import { QrcodeComponent } from './components/qrcode/qrcode.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
-import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule } from '@angular/forms';
+import { SpinnerComponent } from './components/spinner/spinner.component';
+import { LoadingInterceptor } from './interceptors/loading/loading.interceptor';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,8 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
     EntitiesComponent,
     EntityDetailComponent,
     QrcodeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    SpinnerComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -29,7 +32,9 @@ import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
     HttpClientModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true }
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
