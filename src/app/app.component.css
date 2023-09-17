@@ -1,9 +1,7 @@
 .base_page {
     max-width: 768px;
-    padding-top: 8px;
-    padding-right: 8px;
-    padding-bottom: 80px;
-    padding-left: 8px;
+    padding: 16px;
+    padding-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
 }

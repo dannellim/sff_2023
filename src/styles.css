@@ -4,15 +4,16 @@
   filter: invert(27%) sepia(93%) saturate(854%) hue-rotate(127deg) brightness(91%) contrast(101%);
 }
 
-a {
-  color: #000000;
+a:link, a:visited, a:hover, a:active{
   text-decoration: none;
+  color: black;
 }
 
 b,
 strong {
   color: #006F4E;
 }
+
 
 /* simple animation - if needed*/
 /* @keyframes fade {

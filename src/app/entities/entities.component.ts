@@ -16,6 +16,6 @@ export class EntitiesComponent {
   }
   getEntities(): void {
     this.entityService.getEntities()
-      .subscribe(entities => { this.entities = entities; this.groupEntity = entities[0]; });
+      .subscribe(entities => { this.entities = entities.splice(1); this.groupEntity = entities[0]; });
   }
 }
