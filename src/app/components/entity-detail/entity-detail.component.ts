@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { Entity } from '../models/entity';
+import { Entity } from '../../models/entity';
 import { ActivatedRoute } from '@angular/router';
-import { EntityService } from '../services/entity-service/entity.service';
+import { EntityService } from '../../services/entity-service/entity.service';
 
 @Component({
   selector: 'app-entity-detail',
