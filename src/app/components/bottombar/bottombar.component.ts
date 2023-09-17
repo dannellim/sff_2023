@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
+import { LoaderService } from 'src/app/services/loader/loader.service';
 @Component({
   selector: 'app-bottombar',
   templateUrl: './bottombar.component.html',
@@ -9,7 +10,8 @@ import { Router } from '@angular/router';
 export class BottombarComponent {
   constructor(
     private location: Location,
-    private router: Router
+    private router: Router,
+    private loader: LoaderService
   ) {}
   goBack(): void {
     this.location.back();
@@ -22,5 +24,8 @@ export class BottombarComponent {
   }
   contact(): void {
     this.router.navigate(['/contact']);
+  }
+  agenda(): void {
+    this.loader.setLoading(true);
   }
 }

@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { EntitiesComponent } from './entities/entities.component';
-import { EntityDetailComponent } from './entity-detail/entity-detail.component';
-import { QrcodeComponent } from './qrcode/qrcode.component';
-import { ContactUsComponent } from './contact-us/contact-us.component';
+import { EntitiesComponent } from './components/entities/entities.component';
+import { EntityDetailComponent } from './components/entity-detail/entity-detail.component';
+import { QrcodeComponent } from './components/qrcode/qrcode.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/entities', pathMatch: 'full' },
