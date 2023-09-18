@@ -1,0 +1,18 @@
+<h2>Agenda</h2>
+<br>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let event of events">
+        <div>
+            <h5>{{event.name}}</h5>
+            <label><b>{{event.date}} {{event.time}}</b></label>
+            <br><br>
+            <label>{{event.summary}}</label>
+            <br><br>
+            <label>{{event.description}}</label>
+            <br><br>
+            <div class="a">
+                <a routerLink="/event/{{event.id}}">View details</a>
+            </div>
+        </div>
+    </li>
+  </ul>
