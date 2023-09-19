@@ -26,6 +26,6 @@ export class BottombarComponent {
     this.router.navigate(['/contact']);
   }
   agenda(): void {
-    this.loader.setLoading(true);
+    this.router.navigate(['/events']);
   }
 }

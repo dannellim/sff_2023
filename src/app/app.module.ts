@@ -13,6 +13,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { FormsModule } from '@angular/forms';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { LoadingInterceptor } from './interceptors/loading/loading.interceptor';
+import { EventsComponent } from './components/events/events.component';
+import { EventDetailsComponent } from './components/event-details/event-details.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { LoadingInterceptor } from './interceptors/loading/loading.interceptor';
     EntityDetailComponent,
     QrcodeComponent,
     ContactUsComponent,
-    SpinnerComponent
+    SpinnerComponent,
+    EventsComponent,
+    EventDetailsComponent
   ],
   imports: [
     BrowserAnimationsModule,
