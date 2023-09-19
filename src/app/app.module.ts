@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { SpinnerComponent } from './components/spinner/spinner.component';
 import { LoadingInterceptor } from './interceptors/loading/loading.interceptor';
 import { EventsComponent } from './components/events/events.component';
+import { EventDetailsComponent } from './components/event-details/event-details.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { EventsComponent } from './components/events/events.component';
     QrcodeComponent,
     ContactUsComponent,
     SpinnerComponent,
-    EventsComponent
+    EventsComponent,
+    EventDetailsComponent
   ],
   imports: [
     BrowserAnimationsModule,

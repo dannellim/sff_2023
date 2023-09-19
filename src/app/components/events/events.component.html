@@ -4,14 +4,10 @@
     <li class="list-group-item" *ngFor="let event of events">
         <div>
             <h5>{{event.name}}</h5>
-            <label><b>{{event.date}} {{event.time}}</b></label>
-            <br><br>
-            <label>{{event.summary}}</label>
-            <br><br>
-            <label>{{event.description}}</label>
-            <br><br>
+            <p><b>{{event.date}} {{event.time}}</b></p>
+            <p>{{event.summary}}</p>
             <div class="a">
-                <a routerLink="/event/{{event.id}}">View details</a>
+                <a routerLink="/event/{{event.id}}"><small>View details</small></a>
             </div>
         </div>
     </li>
