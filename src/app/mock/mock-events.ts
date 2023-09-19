@@ -13,6 +13,7 @@ export const EVENTS: Event[] = [
         description: "Join us for a two-day journey into the world of fintech innovation. Network with industry leaders, attend interactive workshops, and gain hands-on experience with the latest fintech solutions.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -27,6 +28,7 @@ export const EVENTS: Event[] = [
         description: "Dive into the world of cryptocurrencies, decentralized finance, and non-fungible tokens at the CryptoConvergence Summit. Engage with top experts, discuss investment strategies, and explore the latest crypto trends.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -41,6 +43,7 @@ export const EVENTS: Event[] = [
         description: "Stay compliant and competitive with the latest regulatory technology. Join us for a one-day event featuring keynote speakers, panel discussions, and workshops on the evolving landscape of regulatory technology.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -55,6 +58,7 @@ export const EVENTS: Event[] = [
         description: "Discover how technology is reshaping the insurance industry at the InsurTech Insights Forum. Explore emerging trends, case studies, and practical applications of insurtech solutions.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -69,6 +73,7 @@ export const EVENTS: Event[] = [
         description: "Uncover the potential of AI in finance at the AI in Finance Expo. Attend sessions on machine learning, data analytics, and AI-driven investment strategies.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -83,6 +88,7 @@ export const EVENTS: Event[] = [
         description: "Join industry experts for a deep dive into the payments landscape. Discuss mobile wallets, contactless payments, and the latest payment innovations shaping the future of transactions.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -97,6 +103,7 @@ export const EVENTS: Event[] = [
         description: "The WealthTech Summit is a two-day event focused on digital wealth management solutions, robo-advisors, and strategies for financial advisors.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -111,6 +118,7 @@ export const EVENTS: Event[] = [
         description: "Explore the intersection of finance and sustainability at the Sustainable Finance Symposium. Learn how fintech is driving positive environmental and social impact.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -125,6 +133,7 @@ export const EVENTS: Event[] = [
         description: "Discover the latest innovations from promising fintech startups. This one-day expo provides a platform for startups to showcase their products and connect with investors and industry professionals.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
@@ -139,6 +148,7 @@ export const EVENTS: Event[] = [
         description: "Explore the critical role of cybersecurity in the financial sector. Engage with cybersecurity experts, learn about the latest threats, and discuss strategies to safeguard financial institutions.",
         date: Helper.randomFutureDate().toLocaleDateString(),
         time: Helper.randomTime().toLocaleString("en-US", {
+            weekday: "long",
             hour: "numeric",
             minute: "numeric",
             hour12: true,
