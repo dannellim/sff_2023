@@ -7,15 +7,17 @@
     <div *ngIf="speaker" style="text-align: center;">
         <p><b>Speaker</b></p>
         <div class="center_div">
-            <div class="card" style="max-width: 208px;">
-                <img class="img-thumbnail" src={{speaker.image}} alt={{speaker.name}}>
-                <div class="card-body">
-                    <h5 class="card-title">{{speaker.name}}</h5> 
-                    <label class="card-text">{{speaker.jobTitle}}</label>
-                    <br>
-                    <label class="card-text">{{speaker.company}}</label>
+            <a href={{speaker.linkedIn}} target=”_blank”>
+                <div class="card" style="max-width: 208px;">
+                    <img class="img-thumbnail" src={{speaker.image}} alt={{speaker.name}}>
+                    <div class="card-body">
+                        <h5 class="card-title">{{speaker.name}}</h5> 
+                        <label class="card-text">{{speaker.jobTitle}}</label>
+                        <br>
+                        <label class="card-text">{{speaker.company}}</label>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>
