@@ -16,6 +16,10 @@ export class Helper {
         return date;
     }
 
+    static shortDayOfWeekAsString(dayIndex: number) {
+        return ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"][dayIndex] || '';
+    }
+
     static dayOfWeekAsString(dayIndex: number) {
         return ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"][dayIndex] || '';
     }

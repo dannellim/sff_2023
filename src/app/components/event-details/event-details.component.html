@@ -7,7 +7,7 @@
         </time>
     </div>
     <h2>{{selectedEvent.name}}</h2>
-    <p><b>{{selectedEvent.date}} {{selectedEvent.time}}</b></p>
+    <p><b>{{selectedEvent.date}} {{dayOfWeekAsString(eventDate!.getDay())}} {{selectedEvent.time}}</b></p>
     <p>{{selectedEvent.summary}}</p>
     <p>{{selectedEvent.description}}</p>
     <hr/>
