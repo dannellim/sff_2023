@@ -6,7 +6,8 @@
             </div>
             <br>
             <div class="center_div">
-                <p class="summary_text">{{groupEntity.description}}</p>
+                <p class="summary_text">{{groupEntity.description.substring(0, groupEntity.description.indexOf("\n"))}}
+                </p>
             </div>
         </div>
     </a>
