@@ -10,8 +10,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
 export class BottombarComponent {
   constructor(
     private location: Location,
-    private router: Router,
-    private loader: LoaderService
+    private router: Router
   ) {}
   goBack(): void {
     this.location.back();
