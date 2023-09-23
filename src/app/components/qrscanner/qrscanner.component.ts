@@ -11,7 +11,24 @@ export class QrscannerComponent {
   qrResultString: string = "";
   hasDevices: boolean = false;
   hasPermission: boolean = false;
+  availableDevices: MediaDeviceInfo[] = [];
+  deviceCurrent?: MediaDeviceInfo;
+  deviceSelected: string = "";
+  onDeviceSelectChange(selected: string) {
+    const selectedStr = selected || '';
+    if (this.deviceSelected === selectedStr) { return; }
+    this.deviceSelected = selectedStr;
+    const device = this.availableDevices.find(x => x.deviceId === selected);
+    this.deviceCurrent = device || undefined;
+  }
+  onDeviceChange(device: MediaDeviceInfo) {
+    const selectedStr = device?.deviceId || '';
+    if (this.deviceSelected === selectedStr) { return; }
+    this.deviceSelected = selectedStr;
+    this.deviceCurrent = device || undefined;
+  }
   onCamerasFound(devices: MediaDeviceInfo[]): void {
+    this.availableDevices = devices;
     this.hasDevices = Boolean(devices && devices.length);
   }
   onHasPermission(has: boolean) {
