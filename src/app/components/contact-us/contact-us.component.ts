@@ -3,6 +3,7 @@ import { Contact } from '../../models/contact';
 import { Location } from '@angular/common';
 import emailjs from '@emailjs/browser';
 import { LoaderService } from 'src/app/services/loader/loader.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-contact-us',
@@ -10,7 +11,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
-  constructor(private location: Location, private loadingService: LoaderService) { }
+  constructor(private location: Location, private loadingService: LoaderService, private router: Router) { }
   contact: Contact = {
     email: '', name: '', message: ''
   };
@@ -33,5 +34,8 @@ export class ContactUsComponent {
   }
   done() {
     this.location.back();
+  }
+  scanner(): void {
+    this.router.navigate(['/scanner']);
   }
 }
