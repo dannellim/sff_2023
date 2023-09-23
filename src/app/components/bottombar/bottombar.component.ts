@@ -28,4 +28,7 @@ export class BottombarComponent {
   agenda(): void {
     this.router.navigate(['/events']);
   }
+  scanner(): void {
+    this.router.navigate(['/scanner']);
+  }
 }

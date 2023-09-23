@@ -6,6 +6,7 @@ import { QrcodeComponent } from './components/qrcode/qrcode.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { EventsComponent } from './components/events/events.component';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
+import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/entities', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'contact', component: ContactUsComponent, data: { animation: 'contactPage' } },
   { path: 'events', component: EventsComponent, data: { animation: 'eventPage' } },
   { path: 'event/:id', component: EventDetailsComponent, data: { animation: 'eventDetailsPage' } },
+  { path: 'scanner', component: QrscannerComponent, data: { animation: 'scannerPage' } },
 ];
 
 @NgModule({

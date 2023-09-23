@@ -15,6 +15,8 @@ import { SpinnerComponent } from './components/spinner/spinner.component';
 import { LoadingInterceptor } from './interceptors/loading/loading.interceptor';
 import { EventsComponent } from './components/events/events.component';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
+import { ZXingScannerModule } from '@zxing/ngx-scanner';
+import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { EventDetailsComponent } from './components/event-details/event-details.
     ContactUsComponent,
     SpinnerComponent,
     EventsComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    QrscannerComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -34,7 +37,8 @@ import { EventDetailsComponent } from './components/event-details/event-details.
     AppRoutingModule,
     QRCodeModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ZXingScannerModule,
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true }
