@@ -14,7 +14,9 @@ export class QrscannerComponent {
   availableDevices: MediaDeviceInfo[] = [];
   deviceCurrent?: MediaDeviceInfo;
   deviceSelected: string = "";
-  onDeviceSelectChange(selected: string) {
+  onDeviceSelectChange(e: { target: { value: any; }; }) {
+    console.log(e.target.value);  
+    const selected = e.target.value;
     const selectedStr = selected || '';
     if (this.deviceSelected === selectedStr) { return; }
     this.deviceSelected = selectedStr;

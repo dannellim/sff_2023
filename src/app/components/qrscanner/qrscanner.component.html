@@ -2,7 +2,7 @@
   <zxing-scanner [formats]="allowedFormats" (camerasFound)="onCamerasFound($event)" [device]="deviceCurrent" 
   (deviceChange)="onDeviceChange($event)" (permissionResponse)="onHasPermission($event)" (scanSuccess)="onCodeResult($event)" />
 
-  <select id="deviceOption" class="form-select" [value]="deviceSelected" (valueChange)="onDeviceSelectChange($any($event))">
+  <select id="deviceOption" class="form-select" [value]="deviceSelected" (change)="onDeviceSelectChange($any($event))">
     <option value="">No Device Selected</option>
     <option *ngFor="let device of availableDevices" [value]="device.deviceId">{{device.label}}</option>
   </select>
