@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router } from '@angular/router';
-import { LoaderService } from 'src/app/services/loader/loader.service';
+
 @Component({
   selector: 'app-bottombar',
   templateUrl: './bottombar.component.html',
