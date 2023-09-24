@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, retry } from 'rxjs';
 import { Constants } from '../../constants';
@@ -9,6 +9,8 @@ import { Constants } from '../../constants';
 export class ScanService {
   constructor(private http: HttpClient) { }
   postScanData(scan: string): Observable<string> {
-    return this.http.post<string>(Constants.POST_SCAN_DATA_API, scan);
+    const params = new HttpParams()
+      .set('text', scan)
+    return this.http.post<string>(Constants.POST_SCAN_DATA_API, params);
   }
 }

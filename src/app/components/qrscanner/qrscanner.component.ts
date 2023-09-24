@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import BarcodeFormat from '@zxing/library/esm/core/BarcodeFormat';
+import { ScanService } from '../../services/scan/scan.service';
+import { Helper } from '../../helper';
+import { LoaderService } from '../../services/loader/loader.service';
+import { Constants } from '../../constants';
 
 @Component({
   selector: 'app-qrscanner',
@@ -7,7 +11,8 @@ import BarcodeFormat from '@zxing/library/esm/core/BarcodeFormat';
   styleUrls: ['./qrscanner.component.css']
 })
 export class QrscannerComponent {
-  allowedFormats = [ BarcodeFormat.QR_CODE ];
+  constructor(private scanService: ScanService, private loader: LoaderService) { }
+  allowedFormats = [BarcodeFormat.QR_CODE];
   qrResultString: string = "";
   hasDevices: boolean = false;
   hasPermission: boolean = false;
@@ -15,7 +20,7 @@ export class QrscannerComponent {
   deviceCurrent?: MediaDeviceInfo;
   deviceSelected: string = "";
   onDeviceSelectChange(e: { target: { value: any; }; }) {
-    console.log(e.target.value);  
+    console.log(e.target.value);
     const selected = e.target.value;
     const selectedStr = selected || '';
     if (this.deviceSelected === selectedStr) { return; }
@@ -39,5 +44,22 @@ export class QrscannerComponent {
   onCodeResult(resultString: string) {
     this.qrResultString = resultString;
     console.log(resultString);
+    if (Helper.isValidSffScan(resultString)) {
+      this.loader.setLoading(true);
+      this.scanService.postScanData(resultString).subscribe({
+        next: data => {
+          console.log(data);
+          this.loader.setLoading(false);
+          alert("Thank you! We will be in touch with you soon.");
+        },
+        error: error => {
+          console.log(error);
+          this.loader.setLoading(false);
+          alert(error.message);
+        }
+      });
+    } else {
+      alert("Invalid qr code format! Please try again.");
+    }
   }
 }

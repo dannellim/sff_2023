@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Contact } from '../../models/contact';
 import { Location } from '@angular/common';
 import emailjs from '@emailjs/browser';
-import { LoaderService } from 'src/app/services/loader/loader.service';
+import { LoaderService } from '../../services/loader/loader.service';
 import { Router } from '@angular/router';
 
 @Component({
