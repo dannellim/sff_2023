@@ -26,6 +26,20 @@ export class Helper {
 
     static monthAsString(monthIndex: number) {
         return ["January", "February", "March", "April", "May", "June",
-        "July", "August", "September", "October", "November", "December"][monthIndex] || '';
+            "July", "August", "September", "October", "November", "December"][monthIndex] || '';
+    }
+
+    static isValidHttpUrl(data: string) {
+        let url: URL;
+        try {
+            url = new URL(data);
+        } catch (_) {
+            return false;
+        }
+        return url.protocol === "http:" || url.protocol === "https:";
+    }
+
+    static isValidSffScan(data: string): boolean {
+        return !this.isValidHttpUrl(data);
     }
 }

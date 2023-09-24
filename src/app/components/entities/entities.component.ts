@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Entity } from '../../models/entity';
 import { EntityService } from '../../services/entity-service/entity.service';
-import { LoaderService } from 'src/app/services/loader/loader.service';
+import { LoaderService } from '../../services/loader/loader.service';
 
 @Component({
   selector: 'app-entities',
