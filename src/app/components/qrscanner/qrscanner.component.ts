@@ -19,6 +19,7 @@ export class QrscannerComponent {
   availableDevices: MediaDeviceInfo[] = [];
   deviceCurrent?: MediaDeviceInfo;
   deviceSelected: string = "";
+  pauseCamera: boolean = false;
   onDeviceSelectChange(e: { target: { value: any; }; }) {
     console.log(e.target.value);
     const selected = e.target.value;
@@ -42,24 +43,30 @@ export class QrscannerComponent {
     this.hasPermission = has;
   }
   onCodeResult(resultString: string) {
-    this.qrResultString = resultString;
-    console.log(resultString);
-    if (Helper.isValidSffScan(resultString)) {
-      this.loader.setLoading(true);
-      this.scanService.postScanData(resultString).subscribe({
-        next: data => {
-          console.log(data);
-          this.loader.setLoading(false);
-          alert("Thank you! We will be in touch with you soon.");
-        },
-        error: error => {
-          console.log(error);
-          this.loader.setLoading(false);
-          alert(error.message);
-        }
-      });
-    } else {
-      alert("Invalid qr code format! Please try again.");
+    if (resultString && !this.pauseCamera) {
+      this.pauseCamera = true;
+      this.qrResultString = resultString;
+      console.log(resultString);
+      if (Helper.isValidSffScan(resultString)) {
+        this.loader.setLoading(true);
+        this.scanService.postScanData(resultString).subscribe({
+          next: data => {
+            console.log(data);
+            alert("Thank you! We will be in touch with you soon.");
+            this.loader.setLoading(false);
+            this.pauseCamera = false;
+          },
+          error: error => {
+            console.log(error);
+            alert(error.statusText);
+            this.loader.setLoading(false);
+            this.pauseCamera = false;
+          }
+        });
+      } else {
+        alert("Invalid qr code format! Please try again.");
+        this.pauseCamera = false;
+      }
     }
   }
 }

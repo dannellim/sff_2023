@@ -9,8 +9,6 @@ import { Constants } from '../../constants';
 export class ScanService {
   constructor(private http: HttpClient) { }
   postScanData(scan: string): Observable<string> {
-    const params = new HttpParams()
-      .set('text', scan)
-    return this.http.post<string>(Constants.POST_SCAN_DATA_API, params);
+    return this.http.get<string>(Constants.POST_SCAN_DATA_API + "?text=" + encodeURIComponent(scan));
   }
 }
