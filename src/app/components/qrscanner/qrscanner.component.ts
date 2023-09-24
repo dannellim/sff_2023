@@ -58,7 +58,7 @@ export class QrscannerComponent {
           },
           error: error => {
             console.log(error);
-            alert(error.statusText);
+            alert(error.name + " " + error.status + " " + error.statusText);
             this.loader.setLoading(false);
             this.pauseCamera = false;
           }
