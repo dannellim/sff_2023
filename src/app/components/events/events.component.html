@@ -18,8 +18,13 @@
                 </div>
             </div>
             <p>{{event.summary}}</p>
-            <div class="a">
-                <a routerLink="/event/{{event.id}}"><small>View details</small></a>
+            <div class="row">
+                <div class="col left">
+                    <a routerLink="/event/{{event.id}}"><small>View details</small></a>
+                </div>
+                <div class="col right">
+                    <button (click)="register(event.id)" class="btn btn-success btn-sm">Register</button>
+                </div>
             </div>
         </div>
     </li>

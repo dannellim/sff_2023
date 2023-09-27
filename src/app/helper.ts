@@ -39,7 +39,15 @@ export class Helper {
         return url.protocol === "http:" || url.protocol === "https:";
     }
 
+    static isNumber(value?: string | number): boolean {
+        return ((value != null) &&
+            (value !== '') &&
+            !isNaN(Number(value.toString())));
+    }
+
     static isValidSffScan(data: string): boolean {
-        return !this.isValidHttpUrl(data);
+        if (data)
+            return !this.isValidHttpUrl(data) && this.isNumber(data);
+        else return false;
     }
 }

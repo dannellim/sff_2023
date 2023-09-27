@@ -1,28 +1,3 @@
-
-.entity_image {
-    flex: 25%;
-    padding: 8px;
-    text-align: center;
-}
-
-.entity_text {
-    flex: 70%;
-    padding: 8px;
-    white-space: pre-line;
-}
-
-a:link {
-    text-decoration: underline;
-}
-
-a {
-    text-decoration: underline;
-}
-
-div.a {
-    text-align: end;
-}
-
 time.icon
 {
   font-size: 0.4em; /* change icon size */
@@ -72,10 +47,17 @@ time.icon span
   color: #2f2f2f;
 }
 
-div.right {
-    text-align: end;
-}
-
-div.left {
-  text-align: start;
-}
+.center { 
+    height: 200px;
+    position: relative;
+    border: 3px solid #006F4E; 
+  }
+  
+  .center p {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }

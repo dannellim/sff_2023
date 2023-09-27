@@ -10,7 +10,10 @@
     <p><b>{{selectedEvent.date}} {{dayOfWeekAsString(eventDate!.getDay())}} {{selectedEvent.time}}</b></p>
     <p>{{selectedEvent.summary}}</p>
     <p>{{selectedEvent.description}}</p>
-    <hr/>
+    <div class="d-grid gap-2">
+        <button class="btn btn-success" type="button" (click)="register()">Register</button>
+    </div>
+    <hr>
     <div *ngIf="speaker" style="text-align: center;">
         <p><b>Speaker</b></p>
         <div class="center_div">
