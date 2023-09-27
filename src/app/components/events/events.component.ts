@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { EVENTS } from '../../mock/mock-events';
 import { Helper } from 'src/app/helper';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-events',
@@ -8,6 +9,7 @@ import { Helper } from 'src/app/helper';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent {
+  constructor(private router: Router){}
   events = EVENTS;
   dates: Date[] = []
   monthAsString(arg0: number) {
@@ -28,5 +30,8 @@ export class EventsComponent {
       var date = new Date(YYYY + "-" + MM + "-" + DD);
       this.dates.push(date);
     }
+  }
+  register(id: number){
+    this.router.navigate(['/register', id]);
   }
 }

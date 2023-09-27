@@ -23,7 +23,7 @@
                     <a routerLink="/event/{{event.id}}"><small>View details</small></a>
                 </div>
                 <div class="col right">
-                    <button class="btn btn-success btn-sm">Register</button>
+                    <button (click)="register(event.id)" class="btn btn-success btn-sm">Register</button>
                 </div>
             </div>
         </div>
