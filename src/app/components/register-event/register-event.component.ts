@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { Helper } from 'src/app/helper';
 import { EVENTS } from 'src/app/mock/mock-events';
 import { SPEAKERS } from 'src/app/mock/mock-speakers';
@@ -22,7 +22,8 @@ export class RegisterEventComponent {
   dayOfWeekAsString(arg0: number) {
     return Helper.dayOfWeekAsString(arg0);
   }
-  constructor(private route: ActivatedRoute, private loader: LoaderService) { }
+  constructor(private route: ActivatedRoute, private loader: LoaderService,
+    private router: Router) { }
   ngOnInit(): void {
     this.loader.setLoading(true);
     this.getEvent();
@@ -49,5 +50,6 @@ export class RegisterEventComponent {
   };
   submit() {
     console.log(this.contact);
+    this.router.navigate(['/success', this.contact.eventId]);
   }
 }

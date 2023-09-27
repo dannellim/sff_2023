@@ -8,6 +8,7 @@ import { EventsComponent } from './components/events/events.component';
 import { EventDetailsComponent } from './components/event-details/event-details.component';
 import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 import { RegisterEventComponent } from './components/register-event/register-event.component';
+import { RegisterSuccessComponent } from './components/register-success/register-success.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/entities', pathMatch: 'full' },
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'event/:id', component: EventDetailsComponent, data: { animation: 'eventDetailsPage' } },
   { path: 'scanner', component: QrscannerComponent, data: { animation: 'scannerPage' } },
   { path: 'register/:id', component: RegisterEventComponent, data: { animation: 'registerPage' } },
+  { path: 'success/:id', component: RegisterSuccessComponent, data: { animation: 'registerSuccessPage' } },
+  { path: '**', redirectTo: '/entities' }
 ];
 
 @NgModule({
