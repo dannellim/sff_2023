@@ -7,6 +7,7 @@ import { Speaker } from 'src/app/models/speaker';
 import { LoaderService } from 'src/app/services/loader/loader.service';
 import { Event } from 'src/app/models/event';
 import { Register } from 'src/app/models/register';
+import { ScanService } from 'src/app/services/scan/scan.service';
 
 @Component({
   selector: 'app-register-event',
@@ -23,7 +24,7 @@ export class RegisterEventComponent {
     return Helper.dayOfWeekAsString(arg0);
   }
   constructor(private route: ActivatedRoute, private loader: LoaderService,
-    private router: Router) { }
+    private router: Router, private scanService: ScanService) { }
   ngOnInit(): void {
     this.loader.setLoading(true);
     this.getEvent();
@@ -50,7 +51,22 @@ export class RegisterEventComponent {
   };
   submit() {
     console.log(this.contact);
-    this.router.navigate(['/success', this.contact.eventId]);
+    this.registerEvent(this.contact.name, this.contact.email, this.contact.eventId, this.contact.eventTitle);
+  }
+  registerEvent(name: string, emai: string, id: number, title: string) {
+    this.loader.setLoading(true);
+    this.scanService.registerEvent(name, emai, id, title).subscribe({
+      next: data => {
+        console.log(data);
+        this.loader.setLoading(false);
+        this.router.navigate(['/success', id]);
+      },
+      error: error => {
+        console.log(error);
+        alert(error.name + " " + error.status + " " + error.statusText);
+        this.loader.setLoading(false);
+      }
+    });
   }
   scan(){
     this.router.navigate(['/scanner', this.contact.eventId, this.selectedEvent?.name]);
