@@ -52,4 +52,7 @@ export class RegisterEventComponent {
     console.log(this.contact);
     this.router.navigate(['/success', this.contact.eventId]);
   }
+  scan(){
+    this.router.navigate(['/scanner', this.contact.eventId, this.selectedEvent?.name]);
+  }
 }

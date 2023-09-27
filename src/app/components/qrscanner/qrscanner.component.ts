@@ -3,7 +3,7 @@ import BarcodeFormat from '@zxing/library/esm/core/BarcodeFormat';
 import { ScanService } from '../../services/scan/scan.service';
 import { Helper } from '../../helper';
 import { LoaderService } from '../../services/loader/loader.service';
-import { Constants } from '../../constants';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-qrscanner',
@@ -11,7 +11,9 @@ import { Constants } from '../../constants';
   styleUrls: ['./qrscanner.component.css']
 })
 export class QrscannerComponent {
-  constructor(private scanService: ScanService, private loader: LoaderService) { }
+  constructor(private scanService: ScanService, private loader: LoaderService,
+    private route: ActivatedRoute,
+    private router: Router) { }
   allowedFormats = [BarcodeFormat.QR_CODE];
   qrResultString: string = "";
   hasDevices: boolean = false;
@@ -48,25 +50,49 @@ export class QrscannerComponent {
       this.qrResultString = resultString;
       console.log(resultString);
       if (Helper.isValidSffScan(resultString)) {
-        this.loader.setLoading(true);
-        this.scanService.postScanData(resultString).subscribe({
-          next: data => {
-            console.log(data);
-            alert("Thank you! We will be in touch with you soon.");
-            this.loader.setLoading(false);
-            this.pauseCamera = false;
-          },
-          error: error => {
-            console.log(error);
-            alert(error.name + " " + error.status + " " + error.statusText);
-            this.loader.setLoading(false);
-            this.pauseCamera = false;
-          }
-        });
+        if (this.route.snapshot.paramMap.get('id') && this.route.snapshot.paramMap.get('title')) {
+          const id = Number(this.route.snapshot.paramMap.get('id'));
+          const title = this.route.snapshot.paramMap.get('title') ?? "";
+          this.scanRegister(resultString, id, title);
+        } else this.scanContact(resultString);
       } else {
         alert("Invalid qr code format! Please try again.");
         this.pauseCamera = false;
       }
     }
+  }
+  scanRegister(resultString: string, id: number, title: string) {
+    this.loader.setLoading(true);
+    this.scanService.postScanRegister(resultString, id, title).subscribe({
+      next: data => {
+        console.log(data);
+        this.loader.setLoading(false);
+        this.pauseCamera = false;
+        this.router.navigate(['/success', id]);
+      },
+      error: error => {
+        console.log(error);
+        alert(error.name + " " + error.status + " " + error.statusText);
+        this.loader.setLoading(false);
+        this.pauseCamera = false;
+      }
+    });
+  }
+  scanContact(resultString: string) {
+    this.loader.setLoading(true);
+    this.scanService.postScanData(resultString).subscribe({
+      next: data => {
+        console.log(data);
+        alert("Thank you! We will be in touch with you soon.");
+        this.loader.setLoading(false);
+        this.pauseCamera = false;
+      },
+      error: error => {
+        console.log(error);
+        alert(error.name + " " + error.status + " " + error.statusText);
+        this.loader.setLoading(false);
+        this.pauseCamera = false;
+      }
+    });
   }
 }
