@@ -18,6 +18,7 @@ import { EventDetailsComponent } from './components/event-details/event-details.
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 import { RegisterEventComponent } from './components/register-event/register-event.component';
+import { RegisterSuccessComponent } from './components/register-success/register-success.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RegisterEventComponent } from './components/register-event/register-eve
     EventsComponent,
     EventDetailsComponent,
     QrscannerComponent,
-    RegisterEventComponent
+    RegisterEventComponent,
+    RegisterSuccessComponent
   ],
   imports: [
     BrowserAnimationsModule,
