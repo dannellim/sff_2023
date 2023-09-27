@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Event } from 'src/app/models/event';
 import { EVENTS } from '../../mock/mock-events';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { LoaderService } from 'src/app/services/loader/loader.service';
 import { Speaker } from 'src/app/models/speaker';
 import { SPEAKERS } from 'src/app/mock/mock-speakers';
@@ -21,7 +21,8 @@ export class EventDetailsComponent {
   }
   events: Event[] = EVENTS;
   speakers: Speaker[] = SPEAKERS;
-  constructor(private route: ActivatedRoute, private loader: LoaderService) { }
+  constructor(private route: ActivatedRoute, private loader: LoaderService,
+    private router: Router) { }
   ngOnInit(): void {
     this.getEvent();
   }
@@ -42,5 +43,8 @@ export class EventDetailsComponent {
     const id = this.selectedEvent?.speakerId;
     this.speaker = this.speakers.find(i => i.id === id);
     this.loader.setLoading(false);
+  }
+  register(){
+    this.router.navigate(['/register', this.selectedEvent?.id]);
   }
 }
