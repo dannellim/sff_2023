@@ -14,8 +14,12 @@ a {
     text-decoration: underline;
 }
 
-div.a {
+div.right {
     text-align: end;
+}
+
+div.left {
+  text-align: start;
 }
 
 time.icon
