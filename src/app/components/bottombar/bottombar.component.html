@@ -17,17 +17,17 @@
             <br>
             <label routerLink="/contact" routerLinkActive="textlinkactive">Contact</label>
         </div>
-        <div class="col" (click)="agenda()">
-            <img src="assets/icons/calendar.svg" class="filter-primary-color" routerLink="/events"
-                routerLinkActive="linkactive">
-            <br>
-            <label routerLink="/events" routerLinkActive="textlinkactive">Agenda</label>
-        </div>
         <div class="col" (click)="share()">
             <img src="assets/icons/share.svg" class="filter-primary-color" routerLink="/qrcode"
                 routerLinkActive="linkactive">
             <br>
             <label routerLink="/qrcode" routerLinkActive="textlinkactive">Share</label>
+        </div>
+        <div class="col" (click)="agenda()">
+            <img src="assets/icons/calendar.svg" class="filter-primary-color" routerLink="/events"
+                routerLinkActive="linkactive">
+            <br>
+            <label routerLink="/events" routerLinkActive="textlinkactive">Agenda</label>
         </div>
         <div class="col" (click)="goHome()">
             <img src="assets/icons/home.svg" class="filter-primary-color" routerLink="/entities"
