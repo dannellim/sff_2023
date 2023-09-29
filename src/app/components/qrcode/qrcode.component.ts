@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Constants } from 'src/app/constants';
 declare function shareLink(url: string): void;
 @Component({
   selector: 'app-qrcode',
@@ -13,7 +14,7 @@ export class QrcodeComponent {
     this.getUrl();
   }
   getUrl(): void {
-    this.myAngularxQrCode = String(this.route.snapshot.paramMap.get('url'));
+    this.myAngularxQrCode = String(Constants.PROD_URL);
     console.log(this.myAngularxQrCode);
   }
   share(): void {
