@@ -2,14 +2,14 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Constants } from 'src/app/constants';
-import { Speaker } from 'src/app/models/speaker';
+import { Event } from 'src/app/models/event';
 
 @Injectable({
   providedIn: 'root'
 })
-export class SpeakerServiceService {
+export class EventServiceService {
   constructor(private http: HttpClient) { }
-  getEntities(): Observable<Speaker[]> {
-    return this.http.get<Speaker[]>(Constants.SPEAKERS_API);
+  getEntities(): Observable<Event[]> {
+    return this.http.get<Event[]>(Constants.EVENTS_API);
   }
 }

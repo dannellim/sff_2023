@@ -10,6 +10,6 @@ import { Constants } from '../../constants';
 export class EntityService {
   constructor(private http: HttpClient) { }
   getEntities(): Observable<Entity[]> {
-    return this.http.get<Entity[]>(Constants.ENTITIES_API)
+    return this.http.get<Entity[]>(Constants.ENTITIES_API);
   }
 }
