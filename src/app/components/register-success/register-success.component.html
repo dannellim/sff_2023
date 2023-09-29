@@ -1,23 +1,25 @@
-<h2>Thank you!</h2>
-<div>
-    <label>You have been successfully registered for:</label>
-    <hr>
-    <div class="row" style="padding-top: 8px;">
-        <div class="col-auto" style="padding-right: 0 !important;">
-            <time [dateTime]="dates[events.indexOf(event!)]!" class="icon">
-                <em>{{dayOfWeekAsString(dates[events.indexOf(event!)].getDay())}}</em>
-                <strong>{{monthAsString(dates[events.indexOf(event!)].getMonth())}}</strong>
-                <span>{{dates[events.indexOf(event!)].getDate()}}</span>
-            </time>
+<div *ngIf="(dates | json) != '[]'">
+    <h2>Thank you!</h2>
+    <div>
+        <label>You have been successfully registered for:</label>
+        <hr>
+        <div class="row" style="padding-top: 8px;">
+            <div class="col-auto" style="padding-right: 0 !important;">
+                <time [dateTime]="dates[events.indexOf(event!)]!" class="icon">
+                    <em>{{dayOfWeekAsString(dates[events.indexOf(event!)].getDay())}}</em>
+                    <strong>{{monthAsString(dates[events.indexOf(event!)].getMonth())}}</strong>
+                    <span>{{dates[events.indexOf(event!)].getDate()}}</span>
+                </time>
+            </div>
+            <div class="col-auto" style="padding-right: 0 !important;">
+                <strong>{{event?.name}}</strong>
+                <p><b>{{event?.date}} {{shortDayOfWeekAsString(dates[events.indexOf(event!)].getDay())}}
+                        {{event?.time}}</b></p>
+            </div>
+            <p>{{event?.summary}}</p>
         </div>
-        <div class="col-auto" style="padding-right: 0 !important;">
-            <strong>{{event?.name}}</strong>
-            <p><b>{{event?.date}} {{shortDayOfWeekAsString(dates[events.indexOf(event!)].getDay())}}
-                    {{event?.time}}</b></p>
+        <div class="center">
+            <p>Map To Booth</p>
         </div>
-        <p>{{event?.summary}}</p>
-    </div>
-    <div class="center">
-        <p>Map To Booth</p>
     </div>
 </div>

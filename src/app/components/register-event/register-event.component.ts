@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Helper } from 'src/app/helper';
-import { EVENTS } from 'src/app/mock/mock-events';
-import { SPEAKERS } from 'src/app/mock/mock-speakers';
 import { Speaker } from 'src/app/models/speaker';
 import { LoaderService } from 'src/app/services/loader/loader.service';
 import { Event } from 'src/app/models/event';
 import { Register } from 'src/app/models/register';
 import { ScanService } from 'src/app/services/scan/scan.service';
+import { EventServiceService } from 'src/app/services/event/event-service.service';
+import { SpeakerServiceService } from 'src/app/services/speaker/speaker-service.service';
 
 @Component({
   selector: 'app-register-event',
@@ -15,36 +15,44 @@ import { ScanService } from 'src/app/services/scan/scan.service';
   styleUrls: ['./register-event.component.css']
 })
 export class RegisterEventComponent {
-  events: Event[] = EVENTS;
-  speakers: Speaker[] = SPEAKERS;
+  events: Event[] = [];
+  speakers: Speaker[] = [];
   monthAsString(arg0: number) {
     return Helper.monthAsString(arg0);
   }
   dayOfWeekAsString(arg0: number) {
     return Helper.dayOfWeekAsString(arg0);
   }
-  constructor(private route: ActivatedRoute, private loader: LoaderService,
-    private router: Router, private scanService: ScanService) { }
+  constructor(private route: ActivatedRoute, private loader: LoaderService, private eventService: EventServiceService,
+    private router: Router, private scanService: ScanService, private speakerService: SpeakerServiceService) { }
   ngOnInit(): void {
-    this.loader.setLoading(true);
     this.getEvent();
-    this.loader.setLoading(false);
   }
   selectedEvent?: Event;
   eventDate?: Date;
   speaker?: Speaker
   getEvent(): void {
+    this.loader.setLoading(true);
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.selectedEvent = this.events.find(i => i.id === id);
-    this.contact.eventId = id;
-    this.contact.eventTitle = this.selectedEvent?.name ?? '';
-    var [DD, MM, YYYY] = this.selectedEvent!.date.split('/');
-    this.eventDate = new Date(YYYY + "-" + MM + "-" + DD);
-    this.getSpeaker();
+    this.eventService.getEvents().subscribe(events => {
+      this.events = events;
+      this.selectedEvent = this.events.find(i => i.id === id);
+      this.contact.eventId = id;
+      this.contact.eventTitle = this.selectedEvent?.name ?? '';
+      var [DD, MM, YYYY] = this.selectedEvent!.date.split('/');
+      this.eventDate = new Date(YYYY + "-" + MM + "-" + DD);
+      this.getSpeaker();
+      this.loader.setLoading(false);
+    });
   }
   getSpeaker(): void {
+    this.loader.setLoading(true);
     const id = this.selectedEvent?.speakerId;
-    this.speaker = this.speakers.find(i => i.id === id);
+    this.speakerService.getSpeakers().subscribe(speakers => {
+      this.speakers = speakers;
+      this.speaker = this.speakers.find(i => i.id === id);
+      this.loader.setLoading(false);
+     });
   }
   contact: Register = {
     email: '', name: '', eventTitle: '', eventId: 0
@@ -68,7 +76,7 @@ export class RegisterEventComponent {
       }
     });
   }
-  scan(){
+  scan() {
     this.router.navigate(['/scanner', this.contact.eventId, this.selectedEvent?.name]);
   }
 }

@@ -1,7 +1,9 @@
 import { Component } from '@angular/core';
-import { EVENTS } from '../../mock/mock-events';
 import { Helper } from 'src/app/helper';
 import { Router } from '@angular/router';
+import { Event } from 'src/app/models/event';
+import { EventServiceService } from 'src/app/services/event/event-service.service';
+import { LoaderService } from 'src/app/services/loader/loader.service';
 
 @Component({
   selector: 'app-events',
@@ -9,8 +11,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent {
-  constructor(private router: Router){}
-  events = EVENTS;
+  constructor(private router: Router, private eventService: EventServiceService, private loader: LoaderService) { }
+  events : Event[] = [];
   dates: Date[] = []
   monthAsString(arg0: number) {
     return Helper.monthAsString(arg0);
@@ -22,7 +24,12 @@ export class EventsComponent {
     return Helper.dayOfWeekAsString(arg0);
   }
   ngOnInit(): void {
-    this.getDateArray();
+    this.loader.setLoading(true);
+    this.eventService.getEvents().subscribe(events => {
+      this.events = events;
+      this.getDateArray();
+      this.loader.setLoading(false);
+    });
   }
   getDateArray() {
     for (let i = 0; i < this.events.length; i++) {
@@ -31,7 +38,7 @@ export class EventsComponent {
       this.dates.push(date);
     }
   }
-  register(id: number){
+  register(id: number) {
     this.router.navigate(['/register', id]);
   }
 }

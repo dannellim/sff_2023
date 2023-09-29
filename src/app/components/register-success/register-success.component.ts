@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Helper } from 'src/app/helper';
-import { EVENTS } from 'src/app/mock/mock-events';
 import { Event } from 'src/app/models/event';
+import { EventServiceService } from 'src/app/services/event/event-service.service';
 import { LoaderService } from 'src/app/services/loader/loader.service';
 
 @Component({
@@ -11,7 +11,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
   styleUrls: ['./register-success.component.css']
 })
 export class RegisterSuccessComponent {
-  events = EVENTS;
+  events: Event[] = [];
   dates: Date[] = []
   monthAsString(arg0: number) {
     return Helper.monthAsString(arg0);
@@ -22,20 +22,23 @@ export class RegisterSuccessComponent {
   dayOfWeekAsString(arg0: number) {
     return Helper.dayOfWeekAsString(arg0);
   }
-  constructor(private route: ActivatedRoute, private loader: LoaderService) { }
+  constructor(private route: ActivatedRoute, private loader: LoaderService, private eventService: EventServiceService) { }
   ngOnInit(): void {
-    this.loader.setLoading(true);
     this.getEvent();
-    this.getDateArray();
-    this.loader.setLoading(false);
   }
   event?: Event;
   eventDate?: Date;
   getEvent(): void {
+    this.loader.setLoading(true);
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.event = this.events.find(i => i.id === id);
-    var [DD, MM, YYYY] = this.event!.date.split('/');
-    this.eventDate = new Date(YYYY + "-" + MM + "-" + DD);
+    this.eventService.getEvents().subscribe(events => {
+      this.events = events;
+      this.event = events.find(i => i.id === id);
+      this.getDateArray();
+      var [DD, MM, YYYY] = this.event!.date.split('/');
+      this.eventDate = new Date(YYYY + "-" + MM + "-" + DD);
+      this.loader.setLoading(false);
+    });
   }
   getDateArray() {
     for (let i = 0; i < this.events.length; i++) {
