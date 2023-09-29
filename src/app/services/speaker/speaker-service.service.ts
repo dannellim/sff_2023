@@ -9,7 +9,7 @@ import { Speaker } from 'src/app/models/speaker';
 })
 export class SpeakerServiceService {
   constructor(private http: HttpClient) { }
-  getEntities(): Observable<Speaker[]> {
+  getSpeakers(): Observable<Speaker[]> {
     return this.http.get<Speaker[]>(Constants.SPEAKERS_API);
   }
 }

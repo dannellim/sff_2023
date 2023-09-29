@@ -9,7 +9,7 @@ import { Event } from 'src/app/models/event';
 })
 export class EventServiceService {
   constructor(private http: HttpClient) { }
-  getEntities(): Observable<Event[]> {
+  getEvents(): Observable<Event[]> {
     return this.http.get<Event[]>(Constants.EVENTS_API);
   }
 }
