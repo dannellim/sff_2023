@@ -47,7 +47,11 @@ export class Helper {
 
     static isValidSffScan(data: string): boolean {
         if (data)
-            return !this.isValidHttpUrl(data) && this.isNumber(data);
+            return this.isLinkedIn(data) && this.isNumber(data);
         else return false;
+    }
+
+    static isLinkedIn(value: string){
+        return value.includes("linkedin");
     }
 }
