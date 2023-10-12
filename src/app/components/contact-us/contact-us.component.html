@@ -1,46 +1,78 @@
 <h2>Contact Us</h2>
 <div [hidden]="submitted">
-    <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name" required [(ngModel)]="contact.name" name="name" #name="ngModel">
-        </div>
-        <div class="form-group" [hidden]="name.valid || name.pristine" class="alert alert-danger">Name is required</div>
-        <br/>
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" email="true" class="form-control" id="email" required [(ngModel)]="contact.email" name="email" #email="ngModel">
-        </div>
-        <div class="form-group" [hidden]="email.valid || email.pristine" class="alert alert-danger">Email is required</div>
-        <br/>
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea type="text" class="form-control" id="message" required [(ngModel)]="contact.message" name="message" #message="ngModel"></textarea>
-            <div class="form-group" [hidden]="message.valid || message.pristine" class="alert alert-danger">Message is required</div>
-        </div>
-        <br/>
-        <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
-    </form>
-    <br>
-    <button (click)="scanner()" class="btn btn-success">Scan SFF Pass/LinkedIn QR</button>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" class="form-control" id="name" required [(ngModel)]="contact.name" name="name" #name="ngModel">
+    </div>
+    <div class="form-group" [hidden]="name.valid || name.pristine" class="alert alert-danger">Name is required</div>
+    <br />
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" email="true" class="form-control" id="email" required [(ngModel)]="contact.email" name="email"
+        #email="ngModel">
+    </div>
+    <div class="form-group" [hidden]="email.valid || email.pristine" class="alert alert-danger">Email is required</div>
+    <br />
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea type="text" class="form-control" id="message" required [(ngModel)]="contact.message" name="message"
+        #message="ngModel"></textarea>
+      <div class="form-group" [hidden]="message.valid || message.pristine" class="alert alert-danger">Message is
+        required</div>
+    </div>
+    <br />
+    <p>
+      By submitting this Form, you hereby agree that Crédit Agricole Group may collect, obtain, store and process your
+      personal data that you provide in this form for the purpose of receiving updates, news, promotional and marketing
+      mails or materials from Crédit Agricole Group.
+    </p>
+    <p>
+      You hereby give your consent to Crédit Agricole Group to:
+    </p>
+    <ul>
+      <li>Store and process your Personal Data</li>
+      <li>Disclose your Personal Data to the relevant governmental authorities or third parties where required by law or
+        for legal purposes.</li>
+      <li>Contact you to provide you with information on any updates, news, promotional and marketing mails or materials
+        via electronic transmission to your email address(es) that you have provided</li>
+    </ul>
+    <p>
+      In addition, your personal data may be transferred to any company within the Crédit Agricole Group which may
+      involve sending your data to a location outside Singapore. For the purpose of updating or correcting such data,
+      you may at any time apply to the Crédit Agricole Group to have access to your personal data which are stored by
+      Crédit Agricole Group.
+    </p>
+    <p>
+      You hereby confirm that you are the user and/or subscriber of the email address(es) that you have provided to
+      Crédit Agricole Group.
+    </p>
+    <p>
+      For the avoidance of doubt, Personal Data includes all data defined within the Singapore Personal Data Protection
+      Act 2012 including all data you had disclosed to Crédit Agricole Group in this Form.
+    </p>
+    <button type="submit" class="btn btn-success" [disabled]="!contactForm.form.valid">Submit</button>
+  </form>
+  <br>
+  <button (click)="scanner()" class="btn btn-success">Scan SFF Pass/LinkedIn QR</button>
 </div>
 <div [hidden]="!submitted">
-    <br>
-    <p>Thank you! We will get back to your shortly with your request.</p>
-    <div class="row">
-      <div class="col-xs-3"><b>Name:</b></div>
-      <div class="col-xs-9">{{ contact.name }}</div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-xs-3"><b>Email</b></div>
-      <div class="col-xs-9">{{ contact.email }}</div>
-    </div>
-    <br>
-    <div class="row">
-      <div class="col-xs-3"><b>Message</b></div>
-      <div class="col-xs-9">{{ contact.message }}</div>
-    </div>
-    <br>
-    <button type="button" class="btn btn-success" (click)="done()">Done</button>
+  <br>
+  <p>Thank you! We will get back to your shortly with your request.</p>
+  <div class="row">
+    <div class="col-xs-3"><b>Name:</b></div>
+    <div class="col-xs-9">{{ contact.name }}</div>
   </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-3"><b>Email</b></div>
+    <div class="col-xs-9">{{ contact.email }}</div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-xs-3"><b>Message</b></div>
+    <div class="col-xs-9">{{ contact.message }}</div>
+  </div>
+  <br>
+  <button type="button" class="btn btn-success" (click)="done()">Done</button>
+</div>
