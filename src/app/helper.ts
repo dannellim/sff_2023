@@ -51,7 +51,7 @@ export class Helper {
         else return false;
     }
 
-    static isLinkedIn(value: string){
+    static isLinkedIn(value: string): boolean {
         return value.includes("linkedin");
     }
 }
