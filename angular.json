@@ -28,7 +28,8 @@
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/scripts/share.js"
+              "src/assets/scripts/share.js",
+              "src/assets/scripts/image.js"
             ]
           },
           "configurations": {

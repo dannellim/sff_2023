@@ -1,3 +1,8 @@
+<h2>Locate Us</h2>
+<img id="locationImg" src="assets/images/location_big.png" alt="Location">
+<br><br>
+<img id="boothImg" src="assets/images/booth_big.png" alt="Booth">
+<br><br>
 <h2>Contact Us</h2>
 <div [hidden]="submitted">
   <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
@@ -75,4 +80,10 @@
   </div>
   <br>
   <button type="button" class="btn btn-success" (click)="done()">Done</button>
+</div>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
 </div>
