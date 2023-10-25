@@ -54,5 +54,21 @@
       "linkedIn": "https://ch.linkedin.com/in/anton-soudovtsev-64b4891",
       "jobTitle": "Head of Azqore Business Services",
       "company": "Azqore SA"
+    },
+    {
+      "id": 8,
+      "name": "Walter Zhang, CFA, CAIA",
+      "image": "https://static.licdn.com/aero-v1/sc/h/9c8pery4andzj6ohjkjp54ma2",
+      "linkedIn": "https://sg.linkedin.com/in/walter-zhang-cfa-caia-528a6527?trk=people-guest_people_search-card",
+      "jobTitle": "Director - Senior Private Equity Investor Relations (Asset Management Asia)",
+      "company": "Indosuez Wealth Management"
+    },
+    {
+      "id": 9,
+      "name": "Lucas Bouziat",
+      "image": "https://media.licdn.com/dms/image/D5603AQEf3HdGCP5-Ag/profile-displayphoto-shrink_200_200/0/1686705494202?e=1703721600&v=beta&t=nqHNdNyq3uWi7ppxHmUp7y2tx0kX8YjgjQKOO-iFq8o",
+      "linkedIn": "https://sg.linkedin.com/in/lucas-bouziat-5964423b",
+      "jobTitle": "Appointed Representative Business Development Asia",
+      "company": "Amundi"
     }
   ]
