@@ -2,7 +2,7 @@
     {
       "id": 1,
       "entityId": 1,
-      "speakerId": 1,
+      "speakerId": 0,
       "name": "Group Client Journey Topic 1",
       "summary": "Multi dimension expertise to solve existing and future challenges",
       "description": "Possession of knowledge, skills, and experience in multiple areas or domains, allows an individual or a team to address a wide range of challenges effectively. This concept is particularly relevant when dealing with existing and future challenges that are complex and interconnected.",
