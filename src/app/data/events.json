@@ -81,22 +81,82 @@
     },
     {
       "id": 9,
-      "entityId": 3,
-      "speakerId": 3,
-      "name": "FinTech Startup Expo",
-      "summary": "Showcasing the future of finance.",
-      "description": "Discover the latest innovations from promising fintech startups. This one-day expo provides a platform for startups to showcase their products and connect with investors and industry professionals.",
-      "date": "17/12/2023",
-      "time": "4:00 PM"
+      "entityId": 1,
+      "speakerId": 0,
+      "name": "Group Client Journey Topic 2",
+      "summary": "Transition to sustainable financing",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "10:30 - 10:45 AM"
     },
     {
       "id": 10,
+      "entityId": 6,
+      "speakerId": 8,
+      "name": "Indosuez Private Markets Capabilities and Offerings",
+      "summary": "-",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "11:00 - 11:15 AM"
+    },
+    {
+      "id": 11,
+      "entityId": 2,
+      "speakerId": 9,
+      "name": "AI from discussion to Action",
+      "summary": "-",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "11:30 - 11:45 AM"
+    },
+    {
+      "id": 12,
       "entityId": 4,
-      "speakerId": 4,
-      "name": "Cybersecurity in Finance Summit",
-      "summary": "Protecting financial systems from cyber threats.",
-      "description": "Explore the critical role of cybersecurity in the financial sector. Engage with cybersecurity experts, learn about the latest threats, and discuss strategies to safeguard financial institutions.",
-      "date": "04/10/2023",
-      "time": "3:00 PM"
+      "speakerId": 0,
+      "name": "ESG deposit product",
+      "summary": "-",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "02:00 - 02:15 PM"
+    },
+    {
+      "id": 13,
+      "entityId": 1,
+      "speakerId": 0,
+      "name": "Group Client Journey Topic 1",
+      "summary": "Multi dimension expertise to solve existing and future challenges",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "02:30 - 03:00 PM"
+    },
+    {
+      "id": 14,
+      "entityId": 3,
+      "speakerId": 7,
+      "name": "AZQORE",
+      "summary": "-",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "03:00 - 03:15 PM"
+    },
+    {
+      "id": 15,
+      "entityId": 4,
+      "speakerId": 0,
+      "name": "Partnership with a Fintech COMGO",
+      "summary": "-",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "03:30 - 03:45 PM"
+    },
+    {
+      "id": 16,
+      "entityId": 5,
+      "speakerId": 10,
+      "name": "CACEIS Connect Store",
+      "summary": "-",
+      "description": "-",
+      "date": "16/11/2023",
+      "time": "04:00 - 04:15 PM"
     }
   ]
