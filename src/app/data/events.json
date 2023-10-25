@@ -11,23 +11,23 @@
     },
     {
       "id": 2,
-      "entityId": 2,
-      "speakerId": 2,
-      "name": "CryptoConvergence Summit 2023",
-      "summary": "Where blockchain, DeFi, and NFTs converge.",
-      "description": "Dive into the world of cryptocurrencies, decentralized finance, and non-fungible tokens at the CryptoConvergence Summit. Engage with top experts, discuss investment strategies, and explore the latest crypto trends.",
-      "date": "13/10/2023",
-      "time": "6:00 PM"
+      "entityId": 4,
+      "speakerId": 0,
+      "name": "Partnership with a Fintech COMGO",
+      "summary": "-",
+      "description": "-",
+      "date": "15/11/2023",
+      "time": "11:00 - 11:15 AM"
     },
     {
       "id": 3,
       "entityId": 3,
-      "speakerId": 3,
-      "name": "RegTech Revolution",
-      "summary": "Navigating compliance in the digital age.",
-      "description": "Stay compliant and competitive with the latest regulatory technology. Join us for a one-day event featuring keynote speakers, panel discussions, and workshops on the evolving landscape of regulatory technology.",
-      "date": "22/12/2023",
-      "time": "12:00 PM"
+      "speakerId": 7,
+      "name": "AZQORE Topic One",
+      "summary": "-",
+      "description": "-",
+      "date": "15/11/2023",
+      "time": "11:30 - 11:45 AM"
     },
     {
       "id": 4,

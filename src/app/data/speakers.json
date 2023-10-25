@@ -46,5 +46,13 @@
       "linkedIn": "https://www.linkedin.com/in/dannel-lim-8a573b217/",
       "jobTitle": "Full Stack Developer",
       "company": "Azqore SA"
+    },
+    {
+      "id": 7,
+      "name": "Anton Soudovtsev",
+      "image": "https://media.licdn.com/dms/image/D4E03AQGhxYvv1vORag/profile-displayphoto-shrink_200_200/0/1669410720047?e=1703721600&v=beta&t=0zeLSJYCA6G9YuioNKD03u0Pdu1aiIvRWMdcexvA_T0",
+      "linkedIn": "https://ch.linkedin.com/in/anton-soudovtsev-64b4891",
+      "jobTitle": "Head of Azqore Business Services",
+      "company": "Azqore SA"
     }
   ]
