@@ -37,7 +37,7 @@ export class EventsComponent {
           for (let i = 0; i < events.length; i++) {
             var [DD, MM, YYYY] = events[i].date.split('/');
             var date = new Date(YYYY + "-" + MM + "-" + DD);
-            if (date.toDateString() == dateJson) {
+            if (date.toJSON() == dateJson) {
               this.events.push(events[i]);
             }
           }
