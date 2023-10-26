@@ -26,8 +26,8 @@ export class EventsComponent {
     return Helper.dayOfWeekAsString(arg0);
   }
   ngOnInit(): void {
-    this.loader.setLoading(true);
     this.route.params.subscribe(routeParams => {
+      this.loader.setLoading(true);
       this.eventService.getEvents().subscribe(events => {
         this.initDateDropdown(events);
         const dateJson = routeParams['dateJson'];
@@ -37,7 +37,7 @@ export class EventsComponent {
           for (let i = 0; i < events.length; i++) {
             var [DD, MM, YYYY] = events[i].date.split('/');
             var date = new Date(YYYY + "-" + MM + "-" + DD);
-            if (date.toJSON() == dateJson) {
+            if (date.toDateString() == dateJson) {
               this.events.push(events[i]);
             }
           }
