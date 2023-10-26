@@ -105,7 +105,6 @@ time.icon span
 }
 
 .dropdown-content a:hover {background-color: #ddd;}
-a:active .dropdown-content {display: none;}
 .dropdown:hover .dropdown-content {display: block;}
 
 @media (max-width:300px)

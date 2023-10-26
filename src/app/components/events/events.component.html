@@ -15,7 +15,7 @@
                 <ul>
                     <li><a routerLink="/events">All dates</a></li>
                     <li *ngFor="let date of datesDropdown">
-                        <a routerLink="/events/{{date.toDateString()}}">{{
+                        <a href="/events/{{date.toDateString()}}">{{
                             date.getDate()
                             + " " +
                             monthAsString(date.getMonth()).substring(0,3)
