@@ -4,7 +4,7 @@ import { Helper } from 'src/app/helper';
 import { Event } from 'src/app/models/event';
 import { EventServiceService } from 'src/app/services/event/event-service.service';
 import { LoaderService } from 'src/app/services/loader/loader.service';
-
+declare function initImgModal(): void;
 @Component({
   selector: 'app-register-success',
   templateUrl: './register-success.component.html',
@@ -24,6 +24,7 @@ export class RegisterSuccessComponent {
   }
   constructor(private route: ActivatedRoute, private loader: LoaderService, private eventService: EventServiceService) { }
   ngOnInit(): void {
+    this.initImgModal();
     this.getEvent();
   }
   event?: Event;
@@ -46,5 +47,8 @@ export class RegisterSuccessComponent {
       var date = new Date(YYYY + "-" + MM + "-" + DD);
       this.dates.push(date);
     }
+  }
+  initImgModal(): void {
+    initImgModal();
   }
 }
