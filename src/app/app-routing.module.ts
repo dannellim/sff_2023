@@ -18,7 +18,6 @@ const routes: Routes = [
   { path: 'qrcode', redirectTo: '/entities' },
   { path: 'contact', component: ContactUsComponent, data: { animation: 'contactPage' } },
   { path: 'events', component: EventsComponent, data: { animation: 'eventPage' } },
-  { path: 'events/:dateJson', component: EventsComponent, data: { animation: 'eventPage' } },
   { path: 'event/:id', component: EventDetailsComponent, data: { animation: 'eventDetailsPage' } },
   { path: 'scanner', component: QrscannerComponent, data: { animation: 'scannerPage' } },
   { path: 'scanner/:id/:title', component: QrscannerComponent, data: { animation: 'scannerPage' } },

@@ -1,41 +1,35 @@
 <h2>Global Agenda</h2>
-<div class="container">
-    <div class="row text-center mb-3 dropdown-bar">
-        <div class="col-4 dropdown">
-            <button class="dropbtn dropdown-toggle">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
+
+<div class="container mb-3">
+    <div class="row dropdown">
+        <div class="column dropdown-btn">
+            <select id="entityOption" class="form-select" (change)="onEntityChange($any($event))">
+                <option value="">All entities</option>
+                <option *ngFor="let entity of entities" [value]="entity.id">{{entity.name}}</option>
+            </select>
         </div>
-        <div class="col-4 dropdown">
-            <button class="dropbtn dropdown-toggle">{{dateDropdownText}}</button>
-            <div class="dropdown-content">
-                <ul>
-                    <li><a routerLink="/events">All dates</a></li>
-                    <li *ngFor="let date of datesDropdown">
-                        <a href="./events/{{date.toJSON()}}">{{
-                            date.getDate()
-                            + " " +
-                            monthAsString(date.getMonth()).substring(0,3)
-                            + " " +
-                            date.getFullYear().toString().slice(-2)
-                            }} </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="column dropdown-btn">
+            <select id="dateOption" class="form-select" (change)="onDateChange($any($event))">
+                <option value="">All dates</option>
+                <option *ngFor="let date of datesDropdown"
+                    [value]="date.getDate() + '/' + (date.getMonth() + 1)+ '/' + date.getFullYear()">{{
+                    date.getDate()
+                    + " " +
+                    monthAsString(date.getMonth())
+                    + " " +
+                    date.getFullYear()
+                    }}</option>
+            </select>
         </div>
-        <div class="col-4 dropdown">
-            <button class="dropbtn dropdown-toggle">Dropdown</button>
-            <div class="dropdown-content">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
-            </div>
+        <div class="column dropdown-btn">
+            <select id="timeOption" class="form-select" (change)="onTimeChange($any($event))">
+                <option value="">All times</option>
+                <option *ngFor="let time of times" [value]="time">{{time}}</option>
+            </select>
         </div>
     </div>
 </div>
+
 <ul class="list-group">
     <li class="list-group-item" *ngFor="let event of events">
         <div>
