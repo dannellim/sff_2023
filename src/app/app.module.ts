@@ -19,6 +19,7 @@ import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 import { RegisterEventComponent } from './components/register-event/register-event.component';
 import { RegisterSuccessComponent } from './components/register-success/register-success.component';
+import { LocateUsComponent } from './components/locate-us/locate-us.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { RegisterSuccessComponent } from './components/register-success/register
     EventDetailsComponent,
     QrscannerComponent,
     RegisterEventComponent,
-    RegisterSuccessComponent
+    RegisterSuccessComponent,
+    LocateUsComponent
   ],
   imports: [
     BrowserAnimationsModule,

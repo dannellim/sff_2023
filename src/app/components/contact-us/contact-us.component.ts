@@ -4,7 +4,6 @@ import { Location } from '@angular/common';
 import emailjs from '@emailjs/browser';
 import { LoaderService } from '../../services/loader/loader.service';
 import { Router } from '@angular/router';
-declare function initImgModal(): void;
 @Component({
   selector: 'app-contact-us',
   templateUrl: './contact-us.component.html',
@@ -37,11 +36,5 @@ export class ContactUsComponent {
   }
   scanner(): void {
     this.router.navigate(['/scanner']);
-  }
-  initImgModal(): void {
-    initImgModal();
-  }
-  ngOnInit(): void {
-    this.initImgModal();
   }
 }

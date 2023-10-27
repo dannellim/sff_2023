@@ -9,6 +9,7 @@ import { EventDetailsComponent } from './components/event-details/event-details.
 import { QrscannerComponent } from './components/qrscanner/qrscanner.component';
 import { RegisterEventComponent } from './components/register-event/register-event.component';
 import { RegisterSuccessComponent } from './components/register-success/register-success.component';
+import { LocateUsComponent } from './components/locate-us/locate-us.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/entities', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'scanner/:id/:title', component: QrscannerComponent, data: { animation: 'scannerPage' } },
   { path: 'register/:id', component: RegisterEventComponent, data: { animation: 'registerPage' } },
   { path: 'success/:id', component: RegisterSuccessComponent, data: { animation: 'registerSuccessPage' } },
+  { path: 'locate', component: LocateUsComponent, data: { animation: 'locatePage' } },
   { path: '**', redirectTo: '/entities' }
 ];
 

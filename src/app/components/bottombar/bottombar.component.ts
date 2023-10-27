@@ -30,4 +30,7 @@ export class BottombarComponent {
   scanner(): void {
     this.router.navigate(['/scanner']);
   }
+  map(): void {
+    this.router.navigate(['/locate']);
+  }
 }

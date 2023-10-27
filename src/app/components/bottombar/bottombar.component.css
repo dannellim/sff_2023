@@ -17,7 +17,7 @@ img {
     border-top: 2px solid black; 
     opacity: 1;
     filter: invert(23%) sepia(21%) saturate(946%) hue-rotate(160deg) brightness(95%) contrast(86%);
-    scale: 1.5;
+    scale: 1;
 }
 
 .textlinkactive {
@@ -26,6 +26,7 @@ img {
 }
 
 label {
+    font-size: small;
     vertical-align: middle;
     text-align: center;
     justify-content: center;
