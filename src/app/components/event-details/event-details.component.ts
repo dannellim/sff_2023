@@ -6,6 +6,8 @@ import { Speaker } from 'src/app/models/speaker';
 import { Helper } from 'src/app/helper';
 import { EventServiceService } from 'src/app/services/event/event-service.service';
 import { SpeakerServiceService } from 'src/app/services/speaker/speaker-service.service';
+import { Entity } from 'src/app/models/entity';
+import { EntityService } from 'src/app/services/entity-service/entity.service';
 
 @Component({
   selector: 'app-event-details',
@@ -21,14 +23,16 @@ export class EventDetailsComponent {
   }
   events: Event[] = [];
   speakers: Speaker[] = [];
+  entities: Entity[] = [];
   constructor(private route: ActivatedRoute, private loader: LoaderService, private eventService: EventServiceService,
-    private router: Router, private speakerService: SpeakerServiceService) { }
+    private router: Router, private speakerService: SpeakerServiceService, private entityService: EntityService) { }
   ngOnInit(): void {
     this.getEvent();
   }
   selectedEvent?: Event;
   eventDate?: Date;
   speaker?: Speaker
+  entity?: Entity;
   getEvent(): void {
     this.loader.setLoading(true);
     const id = Number(this.route.snapshot.paramMap.get('id'));
@@ -39,6 +43,7 @@ export class EventDetailsComponent {
         var [DD, MM, YYYY] = this.selectedEvent!.date.split('/');
         this.eventDate = new Date(YYYY + "-" + MM + "-" + DD);
         this.getSpeaker();
+        this.getEntity();
         this.loader.setLoading(false);
       });
   }
@@ -48,6 +53,15 @@ export class EventDetailsComponent {
     this.speakerService.getSpeakers().subscribe(speakers => {
       this.speakers = speakers;
       this.speaker = this.speakers.find(i => i.id === id);
+      this.loader.setLoading(false);
+    });
+  }
+  getEntity(): void {
+    this.loader.setLoading(true);
+    const id = this.selectedEvent?.entityId;
+    this.entityService.getEntities().subscribe(entities => {
+      this.entities = entities;
+      this.entity = this.entities.find(i => i.id === id);
       this.loader.setLoading(false);
     });
   }

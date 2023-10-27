@@ -13,7 +13,13 @@
     <div class="d-grid gap-2">
         <button class="btn btn-success" type="button" (click)="register()">Register</button>
     </div>
-    <div *ngIf="speaker" style="text-align: center;">
+    <div *ngIf="entity" class="entity-div">
+        <br>
+        <a routerLink="/entity/{{entity.id}}">
+            <img class="entity-img" src="assets/images/{{entity.image}}" alt="{{entity.image}}">
+        </a>
+    </div>
+    <div *ngIf="speaker" class="speaker-div">
         <hr>
         <p><b>Speaker</b></p>
         <div class="center_div">
