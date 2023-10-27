@@ -29,7 +29,9 @@
             ],
             "scripts": [
               "src/assets/scripts/share.js",
-              "src/assets/scripts/image.js"
+              "src/assets/scripts/image.js",
+              "src/assets/scripts/atcb.js",
+              "src/assets/scripts/calendar.js"
             ]
           },
           "configurations": {

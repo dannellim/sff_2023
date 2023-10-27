@@ -134,3 +134,7 @@ img {
   text-decoration: none;
   cursor: pointer;
 }
+
+.calendar-div {
+  text-align: center;
+}

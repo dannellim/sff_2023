@@ -4,7 +4,9 @@ import { Helper } from 'src/app/helper';
 import { Event } from 'src/app/models/event';
 import { EventServiceService } from 'src/app/services/event/event-service.service';
 import { LoaderService } from 'src/app/services/loader/loader.service';
+import 'add-to-calendar-button';
 declare function initImgModal(): void;
+declare function initCalBtn(name: string, description: string, startDate:string, startTime:string, endDate:string, endTime:string): void;
 @Component({
   selector: 'app-register-success',
   templateUrl: './register-success.component.html',
@@ -38,6 +40,10 @@ export class RegisterSuccessComponent {
       this.getDateArray();
       var [DD, MM, YYYY] = this.event!.date.split('/');
       this.eventDate = new Date(YYYY + "-" + MM + "-" + DD);
+      var times = this.event?.time.split("-");
+      this.initCalBtn(this.event!.name, this.event!.summary, 
+        YYYY + "-" + MM + "-" + DD, 
+      times![0].trim(), YYYY + "-" + MM + "-" + DD, times![1].trim());
       this.loader.setLoading(false);
     });
   }
@@ -50,5 +56,8 @@ export class RegisterSuccessComponent {
   }
   initImgModal(): void {
     initImgModal();
+  }
+  initCalBtn(name: string, description: string, startDate:string, startTime:string, endDate:string, endTime:string): void {
+    initCalBtn(name, description, startDate, startTime, endDate, endTime);
   }
 }
