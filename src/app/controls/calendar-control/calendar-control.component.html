@@ -1,0 +1,5 @@
+<time [dateTime]="dateInput" class="icon">
+    <em>{{dayOfWeekAsString(dateInput.getDay())}}</em>
+    <strong>{{monthAsString(dateInput.getMonth())}}</strong>
+    <span>{{dateInput.getDate()}}</span>
+</time>

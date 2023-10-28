@@ -14,14 +14,8 @@ declare function initCalBtn(name: string, description: string, startDate:string,
 export class RegisterSuccessComponent {
   events: Event[] = [];
   dates: Date[] = []
-  monthAsString(arg0: number) {
-    return Helper.monthAsString(arg0);
-  }
   shortDayOfWeekAsString(arg0: number) {
     return Helper.shortDayOfWeekAsString(arg0);
-  }
-  dayOfWeekAsString(arg0: number) {
-    return Helper.dayOfWeekAsString(arg0);
   }
   constructor(private route: ActivatedRoute, private loader: LoaderService, private eventService: EventServiceService) { }
   ngOnInit(): void {
