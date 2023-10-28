@@ -3,25 +3,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
-.event_container {
-    display: flex;
-    align-items: center;
-    justify-content: center
-}
-
-a {
-    text-decoration: underline;
-}
-
-div.right {
-    text-align: end;
-}
-
-div.left {
-  text-align: start;
-}
-
 .container {
   padding: 0;
 }

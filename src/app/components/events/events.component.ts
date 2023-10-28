@@ -28,9 +28,6 @@ export class EventsComponent {
   monthAsString(arg0: number) {
     return Helper.monthAsString(arg0);
   }
-  shortDayOfWeekAsString(arg0: number) {
-    return Helper.shortDayOfWeekAsString(arg0);
-  }
   ngOnInit(): void {
     this.loader.setLoading(true);
     this.entityService.getEntities()
