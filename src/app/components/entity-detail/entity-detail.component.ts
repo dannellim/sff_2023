@@ -39,14 +39,8 @@ export class EntityDetailComponent {
     });
   }
   dates: Date[] = []
-  monthAsString(arg0: number) {
-    return Helper.monthAsString(arg0);
-  }
   shortDayOfWeekAsString(arg0: number) {
     return Helper.shortDayOfWeekAsString(arg0);
-  }
-  dayOfWeekAsString(arg0: number) {
-    return Helper.dayOfWeekAsString(arg0);
   }
   getDateArray() {
     for (let i = 0; i < this.events.length; i++) {
