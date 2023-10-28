@@ -21,6 +21,7 @@ import { RegisterEventComponent } from './components/register-event/register-eve
 import { RegisterSuccessComponent } from './components/register-success/register-success.component';
 import { LocateUsComponent } from './components/locate-us/locate-us.component';
 import { CalendarControlComponent } from './controls/calendar-control/calendar-control.component';
+import { PdpaTextControlComponent } from './controls/pdpa-text-control/pdpa-text-control.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { CalendarControlComponent } from './controls/calendar-control/calendar-c
     RegisterEventComponent,
     RegisterSuccessComponent,
     LocateUsComponent,
-    CalendarControlComponent
+    CalendarControlComponent,
+    PdpaTextControlComponent
   ],
   imports: [
     BrowserAnimationsModule,
