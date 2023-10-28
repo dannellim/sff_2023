@@ -67,9 +67,6 @@ export class EventsComponent {
     }
     this.times = times.filter((date, i, self) => self.findIndex(d => d === date) === i);
   }
-  register(id: number) {
-    this.router.navigate(['/register', id]);
-  }
   onEntityChange(value: any) {
     this.selectedEntity = value.target.value;
     this.onSelectionChange();

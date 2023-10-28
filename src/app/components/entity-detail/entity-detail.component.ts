@@ -39,17 +39,11 @@ export class EntityDetailComponent {
     });
   }
   dates: Date[] = []
-  shortDayOfWeekAsString(arg0: number) {
-    return Helper.shortDayOfWeekAsString(arg0);
-  }
   getDateArray() {
     for (let i = 0; i < this.events.length; i++) {
       var [DD, MM, YYYY] = this.events[i].date.split('/');
       var date = new Date(YYYY + "-" + MM + "-" + DD);
       this.dates.push(date);
     }
-  }
-  register(id: number) {
-    this.router.navigate(['/register', id]);
   }
 }

@@ -10,23 +10,3 @@
     padding: 8px;
     white-space: pre-line;
 }
-
-a:link {
-    text-decoration: underline;
-}
-
-a {
-    text-decoration: underline;
-}
-
-div.a {
-    text-align: end;
-}
-
-div.right {
-    text-align: end;
-}
-
-div.left {
-  text-align: start;
-}
