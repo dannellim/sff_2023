@@ -1,0 +1,11 @@
+div.right {
+    text-align: end;
+}
+
+div.left {
+  text-align: start;
+}
+
+a {
+    text-decoration: underline;
+}

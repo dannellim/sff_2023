@@ -1,0 +1,21 @@
+<div>
+    <div class="row" style="padding-top: 8px;">
+        <div class="col-auto" style="padding-right: 0 !important;">
+            <app-calendar-control [dateInput]="dateInput"></app-calendar-control>
+        </div>
+        <div class="col-auto" style="padding-right: 0 !important;">
+            <strong>{{eventInput.name}}</strong>
+            <p><b>{{eventInput.date}} {{shortDayOfWeekAsString(dateInput.getDay())}}
+                    {{eventInput.time}}</b></p>
+        </div>
+    </div>
+    <p>{{eventInput.summary}}</p>
+    <div class="row">
+        <div class="col left">
+            <a routerLink="/event/{{eventInput.id}}"><small>View details</small></a>
+        </div>
+        <div class="col right">
+            <button (click)="register(eventInput.id)" class="btn btn-success btn-sm">Register</button>
+        </div>
+    </div>
+</div>

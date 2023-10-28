@@ -22,6 +22,7 @@ import { RegisterSuccessComponent } from './components/register-success/register
 import { LocateUsComponent } from './components/locate-us/locate-us.component';
 import { CalendarControlComponent } from './controls/calendar-control/calendar-control.component';
 import { PdpaTextControlComponent } from './controls/pdpa-text-control/pdpa-text-control.component';
+import { AgendalistCardviewComponent } from './controls/agendalist-cardview/agendalist-cardview.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { PdpaTextControlComponent } from './controls/pdpa-text-control/pdpa-text
     RegisterSuccessComponent,
     LocateUsComponent,
     CalendarControlComponent,
-    PdpaTextControlComponent
+    PdpaTextControlComponent,
+    AgendalistCardviewComponent
   ],
   imports: [
     BrowserAnimationsModule,
