@@ -4,7 +4,6 @@ import { Helper } from 'src/app/helper';
 import { Event } from 'src/app/models/event';
 import { EventServiceService } from 'src/app/services/event/event-service.service';
 import { LoaderService } from 'src/app/services/loader/loader.service';
-import 'add-to-calendar-button';
 declare function initCalBtn(name: string, description: string, startDate:string, startTime:string, endDate:string, endTime:string): void;
 @Component({
   selector: 'app-register-success',
