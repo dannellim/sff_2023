@@ -15,9 +15,6 @@ import { EntityService } from 'src/app/services/entity-service/entity.service';
   styleUrls: ['./event-details.component.css']
 })
 export class EventDetailsComponent {
-  monthAsString(arg0: number) {
-    return Helper.monthAsString(arg0);
-  }
   dayOfWeekAsString(arg0: number) {
     return Helper.dayOfWeekAsString(arg0);
   }
