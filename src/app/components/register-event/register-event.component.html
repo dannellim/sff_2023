@@ -1,10 +1,6 @@
 <div class="container" *ngIf="selectedEvent">
     <div class="center_div">
-        <time [dateTime]="eventDate!" class="icon">
-            <em>{{dayOfWeekAsString(eventDate!.getDay())}}</em>
-            <strong>{{monthAsString(eventDate!.getMonth())}}</strong>
-            <span>{{eventDate?.getDate()}}</span>
-        </time>
+        <app-calendar-control [dateInput]="eventDate!"></app-calendar-control>
     </div>
     <h2>{{selectedEvent.name}}</h2>
     <p><b>{{selectedEvent.date}} {{dayOfWeekAsString(eventDate!.getDay())}} {{selectedEvent.time}}</b></p>

@@ -17,9 +17,6 @@ import { SpeakerServiceService } from 'src/app/services/speaker/speaker-service.
 export class RegisterEventComponent {
   events: Event[] = [];
   speakers: Speaker[] = [];
-  monthAsString(arg0: number) {
-    return Helper.monthAsString(arg0);
-  }
   dayOfWeekAsString(arg0: number) {
     return Helper.dayOfWeekAsString(arg0);
   }
