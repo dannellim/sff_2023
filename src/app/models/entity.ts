@@ -7,4 +7,6 @@ export interface Entity {
     website: string;
     contact: string;
     linkedIn: string;
+    isSubEntity: string;
+    subEntitiesId: string;
   }

@@ -12,6 +12,32 @@
                 href={{selectedEntity.contact}}>{{selectedEntity.contact}}</a></p>
         <p>{{selectedEntity.description}}</p>
     </div>
+
+    <div *ngIf="subEntities.length>0">
+        <hr>
+        <p><b>Entities</b></p>
+        <ul class="entity_list">
+            <li *ngFor="let entity of subEntities">
+                <div *ngIf="entity.isSubEntity=='true'" >
+                    <a href="./entity/{{entity.id}}">
+                        <div class="entity_container">
+                            <div class="entity_image">
+                                <img src="assets/images/{{entity.image}}" alt="{{entity.image}}">
+                            </div>
+                            <div class="entity_text">
+                                <label><b>{{entity.name}}.</b></label>
+                                <br>
+                                <label>{{entity.summary}}</label>
+                            </div>
+                            <img src="assets/icons/chevron_right.svg" alt="chevron_right"
+                                class="filter-primary-color chevron_right">
+                        </div>
+                    </a>
+                    <br>
+                </div>
+            </li>
+        </ul>
+    </div>
     <div *ngIf="events.length>0">
         <hr>
         <p><b>Entity Agenda</b></p>

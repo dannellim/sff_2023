@@ -7,7 +7,9 @@
     "summary": "International Banking Group",
     "website": "https://www.credit-agricole.com/",
     "contact": "https://www.credit-agricole.com/en/contact-form/your-need",
-    "linkedIn": "https://www.linkedin.com/company/credit-agricole/"
+    "linkedIn": "https://www.linkedin.com/company/credit-agricole/",
+    "isSubEntity": "false",
+    "subEntitiesId": "[]"
   },
   {
     "id": 2,
@@ -17,7 +19,9 @@
     "summary": "Amundi is the leading European asset manager with more than €1.95 trillion of assets, ranking among the top 10 global players.",
     "website": "https://www.amundi.com/",
     "contact": "https://www.amundi.com.sg/retail/Local-Content/Footer/Contact-Us/Contact-form",
-    "linkedIn": "https://www.linkedin.com/company/amundi-"
+    "linkedIn": "https://www.linkedin.com/company/amundi-",
+    "isSubEntity": "false",
+    "subEntitiesId": "[]"
   },
   {
     "id": 3,
@@ -27,7 +31,9 @@
     "summary": "SaaS Digital & Core Banking platform, BPO services, for wealth managers​",
     "website": "https://www.azqore.com/",
     "contact": "customer.info@azqore.com",
-    "linkedIn": "https://sg.linkedin.com/company/azqore-sa"
+    "linkedIn": "https://sg.linkedin.com/company/azqore-sa",
+    "isSubEntity": "false",
+    "subEntitiesId": "[]"
   },
   {
     "id": 4,
@@ -37,7 +43,9 @@
     "summary": "Crédit Agricole CIB is the corporate and investment banking arm of Crédit Agricole Group",
     "website": "https://www.ca-cib.com/",
     "contact": "https://www.ca-cib.com/contact-us",
-    "linkedIn": "https://www.linkedin.com/company/credit-agricole-cib"
+    "linkedIn": "https://www.linkedin.com/company/credit-agricole-cib",
+    "isSubEntity": "false",
+    "subEntitiesId": "[]"
   },
   {
     "id": 5,
@@ -47,7 +55,9 @@
     "summary": "CACEIS is an asset servicing banking group specialising in added-value financial services for all asset classes.",
     "website": "https://www.caceis.com/",
     "contact": "\nstephenie.so@caceis.com\nmichele.tuen@caceis.com",
-    "linkedIn": "https://www.linkedin.com/company/caceis"
+    "linkedIn": "https://www.linkedin.com/company/caceis",
+    "isSubEntity": "false",
+    "subEntitiesId": "[]"
   },
   {
     "id": 6,
@@ -57,6 +67,20 @@
     "summary": "Indosuez Wealth Management is the global wealth management brand of Crédit Agricole Group",
     "website": "https://singapore.ca-indosuez.com/",
     "contact": "https://singapore.ca-indosuez.com/contact",
-    "linkedIn": "https://fr.linkedin.com/company/indosuez-wealth-management"
+    "linkedIn": "https://fr.linkedin.com/company/indosuez-wealth-management",
+    "isSubEntity": "false",
+    "subEntitiesId": "[7]"
+  },
+  {
+    "id": 7,
+    "image": "wdx_light.png",
+    "name": "Wealth Dynamix",
+    "description": "Wealth Dynamix is a subsidiary of Indosuez Wealth Management, the wealth management branch of the Crédit Agricole Group.\n\nWealth Dynamix operates globally and is committed to providing wealth managers with fully integrated digitalised client lifecycle management solutions which remove friction and inefficiency throughout the lifecycle, embeds compliance and provides the ability to offer a fully hybrid client servicing experience.\n\nWe take great pride in knowing that no other vendor can offer one unified platform spanning the entire client journey, and therefore able to orchestrate journeys throughout the client lifecycle.\n\nOur sole focus on wealth management and private banking makes us the top choice for firms wanting to achieve process efficiencies, enrich client service and ensure compliance.\n\nHere is a link to the video that we have available https://youtu.be/8gcMt9lSzmw",
+    "summary": "Market leading provider of Client Lifecycle Management platforms.  We will help you grow AuM, streamline operational processes, remain compliant and deliver innovative service.",
+    "website": "https://wealth-dynamix.com/",
+    "contact": "darell.miller@wealth-dynamix.com",
+    "linkedIn": "https://www.linkedin.com/company/wealth-dynamix/",
+    "isSubEntity": "true",
+    "subEntitiesId": "[]"
   }
 ]

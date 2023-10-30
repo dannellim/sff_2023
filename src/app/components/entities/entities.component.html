@@ -15,20 +15,22 @@
 <br>
 <ul class="entity_list">
     <li *ngFor="let entity of entities">
-        <a routerLink="/entity/{{entity.id}}">
-            <div class="entity_container">
-                <div class="entity_image">
-                    <img src="assets/images/{{entity.image}}" alt="{{entity.image}}">
+        <div *ngIf="entity.isSubEntity=='false'" >
+            <a routerLink="/entity/{{entity.id}}">
+                <div class="entity_container">
+                    <div class="entity_image">
+                        <img src="assets/images/{{entity.image}}" alt="{{entity.image}}">
+                    </div>
+                    <div class="entity_text">
+                        <label><b>{{entity.name}}.</b></label>
+                        <br>
+                        <label>{{entity.summary}}</label>
+                    </div>
+                    <img src="assets/icons/chevron_right.svg" alt="chevron_right"
+                        class="filter-primary-color chevron_right">
                 </div>
-                <div class="entity_text">
-                    <label><b>{{entity.name}}.</b></label>
-                    <br>
-                    <label>{{entity.summary}}</label>
-                </div>
-                <img src="assets/icons/chevron_right.svg" alt="chevron_right"
-                    class="filter-primary-color chevron_right">
-            </div>
-        </a>
-        <br>
+            </a>
+            <br>
+        </div>
     </li>
 </ul>

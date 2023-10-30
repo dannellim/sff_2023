@@ -10,3 +10,26 @@
     padding: 8px;
     white-space: pre-line;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.entity_image {
+    flex: 25%;
+    padding: 8px;
+    text-align: center;
+}
+
+.entity_container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

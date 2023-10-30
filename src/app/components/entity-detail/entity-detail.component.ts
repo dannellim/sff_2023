@@ -21,12 +21,23 @@ export class EntityDetailComponent {
     this.getEntity();
   }
   selectedEntity?: Entity;
+  subEntities: Entity[] = [];
   getEntity(): void {
     this.loader.setLoading(true);
     const id = Number(this.route.snapshot.paramMap.get('id'));
     this.entityService.getEntities()
       .subscribe(entities => {
         this.selectedEntity = entities.find(i => i.id === id);
+        if (this.selectedEntity!.subEntitiesId) {
+          var idArray = JSON.parse(this.selectedEntity?.subEntitiesId ?? "[]");
+          if (idArray.length > 0) {
+            for (let x = 0; x < idArray.length; x++) {
+              let temp = entities.find(i => i.id === idArray[x]);
+              if (temp) { this.subEntities.push(temp); }
+            }
+          }
+        }
+        console.log(this.subEntities);
         this.getEvent();
       });
   }
