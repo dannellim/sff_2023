@@ -9,7 +9,8 @@
     "contact": "https://www.credit-agricole.com/en/contact-form/your-need",
     "linkedIn": "https://www.linkedin.com/company/credit-agricole/",
     "isSubEntity": "false",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[]",
+    "video": ""
   },
   {
     "id": 2,
@@ -21,7 +22,8 @@
     "contact": "https://www.amundi.com.sg/retail/Local-Content/Footer/Contact-Us/Contact-form",
     "linkedIn": "https://www.linkedin.com/company/amundi-",
     "isSubEntity": "false",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[]",
+    "video": ""
   },
   {
     "id": 3,
@@ -33,7 +35,8 @@
     "contact": "customer.info@azqore.com",
     "linkedIn": "https://sg.linkedin.com/company/azqore-sa",
     "isSubEntity": "false",
-    "subEntitiesId": "[7]"
+    "subEntitiesId": "[7]",
+    "video": ""
   },
   {
     "id": 4,
@@ -45,7 +48,8 @@
     "contact": "https://www.ca-cib.com/contact-us",
     "linkedIn": "https://www.linkedin.com/company/credit-agricole-cib",
     "isSubEntity": "false",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[]",
+    "video": ""
   },
   {
     "id": 5,
@@ -57,7 +61,8 @@
     "contact": "\nstephenie.so@caceis.com\nmichele.tuen@caceis.com",
     "linkedIn": "https://www.linkedin.com/company/caceis",
     "isSubEntity": "false",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[]",
+    "video": ""
   },
   {
     "id": 6,
@@ -69,7 +74,8 @@
     "contact": "https://singapore.ca-indosuez.com/contact",
     "linkedIn": "https://fr.linkedin.com/company/indosuez-wealth-management",
     "isSubEntity": "false",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[]",
+    "video": ""
   },
   {
     "id": 7,
@@ -81,6 +87,7 @@
     "contact": "darell.miller@wealth-dynamix.com",
     "linkedIn": "https://www.linkedin.com/company/wealth-dynamix/",
     "isSubEntity": "true",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[]",
+    "video": "https://www.youtube.com/embed/8gcMt9lSzmw?si=vzcqDq4Nz79vHaFV"
   }
 ]

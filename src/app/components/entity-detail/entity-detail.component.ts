@@ -6,6 +6,7 @@ import { LoaderService } from 'src/app/services/loader/loader.service';
 import { Event } from 'src/app/models/event';
 import { Helper } from 'src/app/helper';
 import { EventServiceService } from 'src/app/services/event/event-service.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-entity-detail',
@@ -15,12 +16,13 @@ import { EventServiceService } from 'src/app/services/event/event-service.servic
 
 export class EntityDetailComponent {
   constructor(private route: ActivatedRoute, private entityService: EntityService, private eventService: EventServiceService,
-    private loader: LoaderService, private router: Router) { }
+    private loader: LoaderService, private _sanitizer: DomSanitizer) { }
   events: Event[] = [];
   ngOnInit(): void {
     this.getEntity();
   }
   selectedEntity?: Entity;
+  videoLink?: SafeResourceUrl;
   subEntities: Entity[] = [];
   getEntity(): void {
     this.loader.setLoading(true);
@@ -28,7 +30,7 @@ export class EntityDetailComponent {
     this.entityService.getEntities()
       .subscribe(entities => {
         this.selectedEntity = entities.find(i => i.id === id);
-        if (this.selectedEntity!.subEntitiesId) {
+        if (this.selectedEntity && this.selectedEntity!.subEntitiesId) {
           var idArray = JSON.parse(this.selectedEntity?.subEntitiesId ?? "[]");
           if (idArray.length > 0) {
             for (let x = 0; x < idArray.length; x++) {
@@ -36,9 +38,9 @@ export class EntityDetailComponent {
               if (temp) { this.subEntities.push(temp); }
             }
           }
+          this.videoLink = this._sanitizer.bypassSecurityTrustResourceUrl(this.selectedEntity.video);
+          this.getEvent();
         }
-        console.log(this.subEntities);
-        this.getEvent();
       });
   }
   getEvent(): void {

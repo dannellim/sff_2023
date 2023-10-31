@@ -9,4 +9,5 @@ export interface Entity {
     linkedIn: string;
     isSubEntity: string;
     subEntitiesId: string;
+    video: string;
   }
