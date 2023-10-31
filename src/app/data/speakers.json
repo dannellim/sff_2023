@@ -78,5 +78,69 @@
       "linkedIn": "https://fr.linkedin.com/in/arnaud-misset-4978992",
       "jobTitle": "Chief Digital Officer - Member of CACEIS group Executive Committee",
       "company": "CACEIS"
+    },
+    {
+      "id": 11,
+      "name": "Peter Hoogervorst",
+      "image": "https://media.licdn.com/dms/image/C5603AQE_caiSbUBZGw/profile-displayphoto-shrink_400_400/0/1647689808623?e=1704326400&v=beta&t=ifVf5Ge-Gz9dswBPsUxD3WMMVa2VIcwIkHKpdA3AdYI",
+      "linkedIn": "https://www.linkedin.com/in/peter-hoogervorst-b386341",
+      "jobTitle": "Managing Director - Product Management Asia | Cash Management | Payments | Working Capital | Transaction Banking",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 12,
+      "name": "Antoine Rose",
+      "image": "https://media.licdn.com/dms/image/C5603AQFe22b4zjwxLQ/profile-displayphoto-shrink_400_400/0/1651818582435?e=1704326400&v=beta&t=HGJ--FBEdd8RV86MxyRETQFmZxfC2YHSlA-bDSRlG1M",
+      "linkedIn": "https://www.linkedin.com/in/antoine-rose-04b74272",
+      "jobTitle": "Head of Sustainable Banking, Asia-Pacific and Middle East",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 13,
+      "name": "Roy Chan",
+      "image": "https://media.licdn.com/dms/image/C5603AQG3B5fVbIK-Ow/profile-displayphoto-shrink_400_400/0/1516571479251?e=1704326400&v=beta&t=RllnDKoMPUGeuy5tyxG6sm_mWH7A7p9JrNdkoGjvaIM",
+      "linkedIn": "https://www.linkedin.com/in/roychansg",
+      "jobTitle": "Sustainable Investment Banking",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 14,
+      "name": "Romaric Rollet",
+      "image": "https://www.kinnernet-europe.com/wp-content/uploads/2020/01/ROMARIC-1024x1024.jpg",
+      "linkedIn": "https://www.linkedin.com/in/romaric-rollet-8520b96/",
+      "jobTitle": "Head of Innovation & Digital Transformation / Chief Data Officer",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 15,
+      "name": "Phil Jo Pohlmann",
+      "image": "https://media.licdn.com/dms/image/D5635AQEzD3fXBZBSOQ/profile-framedphoto-shrink_400_400/0/1686561270895?e=1699333200&v=beta&t=81XnB0kndwe5ZRhnCj5rPCFuRCu7Ffrs4UdvVKgzXU0",
+      "linkedIn": "https://www.linkedin.com/in/phil-pohlmann-59ab32100/",
+      "jobTitle": "Senior Software Engineer",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 16,
+      "name": "Trevor Atkinson",
+      "image": "https://media.licdn.com/dms/image/C4E03AQFCU8E4OK0T8Q/profile-displayphoto-shrink_400_400/0/1522677196928?e=1704326400&v=beta&t=9X10ws3kKIeHPmZLtRQL5-9k1nrLsb9_M4tVXQQ-VoU",
+      "linkedIn": "https://www.linkedin.com/in/trevor-atkinson/",
+      "jobTitle": "Global Head of Architecture and Innovation, Capital Markets IT",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 17,
+      "name": "Nancy Cheng",
+      "image": "https://media.licdn.com/dms/image/C4D03AQE0NkpP2cDWXw/profile-displayphoto-shrink_400_400/0/1653554872101?e=1704326400&v=beta&t=akSXTSlJznuI22cSRcxg0AemuX8h7BXxUH7k8E3ZMqU",
+      "linkedIn": "https://www.linkedin.com/in/nancy-cheng-828b756/",
+      "jobTitle": "Head of Technology, Media and Telecom, Asia-Pacific",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 18,
+      "name": "Kenneth Yuen",
+      "image": "https://media.licdn.com/dms/image/C4E03AQGd9gAeUNH2QA/profile-displayphoto-shrink_400_400/0/1659418601789?e=1704326400&v=beta&t=tMQTB4xD2VgUKC7_awclveFJXnAJkhpmrGnjywkWaSE",
+      "linkedIn": "https://www.linkedin.com/in/kenneth-yuen-b93b0138",
+      "jobTitle": "TMT Banker | APAC Coverage | Corporate and Investment Banking",
+      "company": "Crédit Agricole CIB"
     }
   ]
