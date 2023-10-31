@@ -33,7 +33,7 @@
     "contact": "customer.info@azqore.com",
     "linkedIn": "https://sg.linkedin.com/company/azqore-sa",
     "isSubEntity": "false",
-    "subEntitiesId": "[]"
+    "subEntitiesId": "[7]"
   },
   {
     "id": 4,
@@ -69,7 +69,7 @@
     "contact": "https://singapore.ca-indosuez.com/contact",
     "linkedIn": "https://fr.linkedin.com/company/indosuez-wealth-management",
     "isSubEntity": "false",
-    "subEntitiesId": "[7]"
+    "subEntitiesId": "[]"
   },
   {
     "id": 7,
