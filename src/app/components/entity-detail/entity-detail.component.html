@@ -12,6 +12,9 @@
                 href={{selectedEntity.contact}}>{{selectedEntity.contact}}</a></p>
         <p>{{selectedEntity.description}}</p>
     </div>
+    <div *ngIf="selectedEntity.video" class="video_container">
+        <iframe [src]="videoLink" [frameBorder]="0" allowfullscreen></iframe>
+    </div>
     <div *ngIf="subEntities.length>0">
         <hr>
         <p><b>Entities</b></p>
@@ -46,8 +49,5 @@
                     [eventInput]="event"></app-agendalist-cardview>
             </li>
         </ul>
-    </div>
-    <div *ngIf="videoLink">
-        <iframe width="560" height="315" src={{videoLink}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
 </div>
