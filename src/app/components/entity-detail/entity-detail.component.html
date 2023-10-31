@@ -13,12 +13,12 @@
         <p>{{selectedEntity.description}}</p>
     </div>
 
-    <div hidden *ngIf="subEntities.length>0">
+    <div *ngIf="subEntities.length>0">
         <hr>
         <p><b>Entities</b></p>
         <ul class="entity_list">
             <li *ngFor="let entity of subEntities">
-                <div *ngIf="entity.isSubEntity=='true'" >
+                <div *ngIf="entity.isSubEntity=='true'">
                     <a href="./entity/{{entity.id}}">
                         <div class="entity_container">
                             <div class="entity_image">
@@ -43,7 +43,8 @@
         <p><b>Entity Agenda</b></p>
         <ul class="list-group">
             <li class="list-group-item" *ngFor="let event of events">
-                <app-agendalist-cardview [dateInput]="dates[events.indexOf(event)]" [eventInput]="event"></app-agendalist-cardview>
+                <app-agendalist-cardview [dateInput]="dates[events.indexOf(event)]"
+                    [eventInput]="event"></app-agendalist-cardview>
             </li>
         </ul>
     </div>
