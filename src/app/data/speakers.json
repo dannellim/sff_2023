@@ -198,6 +198,45 @@
       "linkedIn": "https://www.linkedin.com/in/michelle-tay-mi-xue-9495397/",
       "jobTitle": "Head of Treasury & Trade Finance – Asia",
       "company": "Mercuria"
+    },
+    {
+      "id": 26,
+      "name": "Stephane Marbehant",
+      "image": "https://media.licdn.com/dms/image/C4E03AQHSp41g0L25hA/profile-displayphoto-shrink_400_400/0/1625656363386?e=1705536000&v=beta&t=1j8RvBLlLCPVdA2qzmpcJeWowdA6GKIsgucZiSYSgIY",
+      "linkedIn": "https://www.linkedin.com/in/stephane-marbehant-390a79214/",
+      "jobTitle": "CEO Azqore SA, Singapore Branch",
+      "company": "Azqore SA"
+    },
+    {
+      "id": 27,
+      "name": "Gil Fontannaz",
+      "image": "https://media.licdn.com/dms/image/C5603AQH58kDfC-Gncg/profile-displayphoto-shrink_800_800/0/1651586863202?e=1705536000&v=beta&t=aUqvvQOP1nl1b4uiOYll2PAmmM1dMkJi6XdxDVIDbzQ",
+      "linkedIn": "https://www.linkedin.com/in/gil-fontannaz-4921b116b/",
+      "jobTitle": "Chief Product Officer",
+      "company": "Azqore SA"
+    },
+    {
+      "id": 28,
+      "name": "Albert Tse, CFA, CAIA",
+      "image": "https://media.licdn.com/dms/image/C5603AQHNIKuKrF_hEw/profile-displayphoto-shrink_400_400/0/1613177128636?e=1705536000&v=beta&t=aT053btv2bzEXj42_D1tiE5YGe2m7lEUGT9KbietA1s",
+      "linkedIn": "https://www.linkedin.com/in/albert-tse-cfa-caia-a307737/",
+      "jobTitle": "Chief Executive Officer - South Asia",
+      "company": "Amundi"
+    },
+    {
+      "id": 29,
+      "name": "Darell Miller",
+      "image": "https://media.licdn.com/dms/image/C4D03AQEsO6-CelNSPg/profile-displayphoto-shrink_400_400/0/1617014527275?e=1705536000&v=beta&t=cHi6u4AEA6bZaeh4dvgdOgcevgxMi63hpkHp0TbNaCE",
+      "linkedIn": "https://www.linkedin.com/in/darellmiller/",
+      "jobTitle": "Managing Director - APAC",
+      "company": "Wealth Dynamix"
+    },
+    {
+      "id": 30,
+      "name": "Fabien Lautodé",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/blank.png",
+      "linkedIn": "https://www.linkedin.com/in/fabienlautode/",
+      "jobTitle": "Head of Global Commodity Finance - Singapore",
+      "company": "Crédit Agricole CIB"
     }
-
   ]
