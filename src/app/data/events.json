@@ -63,10 +63,11 @@
     {
       "id": 7,
       "entityId": 4,
-      "speakerId": 0,
-      "name": "ESG deposit product",
+      "speakerId": null,
+      "speakerIds": [19,20],
+      "name": "Innovation within Global Markets​",
       "summary": "",
-      "description": "",
+      "description": "Our Global Markets teams across origination, structuring, securitization, syndication, research, trading and sales offer a broad range of financial products and solutions on the primary and secondary markets for our corporate and financial institution clients.​\n\nIn a fast-paced and dynamic environment, how is innovation integrated in the Global Markets environment and what are its key drivers today?​",
       "date": "15/11/2023",
       "time": "15:30 - 15:45"
     },
