@@ -32,4 +32,23 @@
             </a>
         </div>
     </div>
+    <div *ngIf="eventSpeakers" class="speaker-div">
+        <hr>
+        <p *ngIf="eventSpeakers.length==1"><b>Speaker</b></p>
+        <p *ngIf="eventSpeakers.length>1"><b>Speakers</b></p>
+        <div class="center_div" *ngFor="let eventSpeaker of eventSpeakers">
+            <a href={{eventSpeaker.linkedIn}} target=”_blank”>
+                <div class="card" style="width: 208px;">
+                    <img class="img-thumbnail" src={{eventSpeaker.image}} alt={{eventSpeaker.name}}>
+                    <div class="card-body">
+                        <h5 class="card-title">{{eventSpeaker.name}}</h5>
+                        <label class="card-text">{{eventSpeaker.jobTitle}}</label>
+                        <br>
+                        <label class="card-text">{{eventSpeaker.company}}</label>
+                    </div>
+                </div>
+                <br>
+            </a>
+        </div>
+    </div>
 </div>

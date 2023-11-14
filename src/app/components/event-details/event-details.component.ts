@@ -28,7 +28,8 @@ export class EventDetailsComponent {
   }
   selectedEvent?: Event;
   eventDate?: Date;
-  speaker?: Speaker
+  speaker?: Speaker;
+  eventSpeakers?: Speaker[] = [];
   entity?: Entity;
   getEvent(): void {
     this.loader.setLoading(true);
@@ -46,12 +47,26 @@ export class EventDetailsComponent {
   }
   getSpeaker(): void {
     this.loader.setLoading(true);
-    const id = this.selectedEvent?.speakerId;
-    this.speakerService.getSpeakers().subscribe(speakers => {
-      this.speakers = speakers;
-      this.speaker = this.speakers.find(i => i.id === id);
-      this.loader.setLoading(false);
-    });
+    if (this.selectedEvent?.speakerIds && this.selectedEvent?.speakerIds.length > 0) {
+      this.eventSpeakers = [];
+      this.speakerService.getSpeakers().subscribe(speakers => {
+        for (var i = 0; i < this.selectedEvent!.speakerIds.length; i++) {
+          var speaker = speakers.find(x => x.id === this.selectedEvent?.speakerIds[i]);
+          if (speaker) {
+            this.eventSpeakers?.push(speaker);
+          }
+        }
+        this.loader.setLoading(false);
+      });
+    }
+    else {
+      const id = this.selectedEvent?.speakerId;
+      this.speakerService.getSpeakers().subscribe(speakers => {
+        this.speakers = speakers;
+        this.speaker = this.speakers.find(i => i.id === id);
+        this.loader.setLoading(false);
+      });
+    }
   }
   getEntity(): void {
     this.loader.setLoading(true);
