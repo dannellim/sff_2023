@@ -196,6 +196,17 @@
     },
     {
       "id": 20,
+      "entityId": 4,
+      "speakerId": null,
+      "speakerIds":[15,16],
+      "name": "Empowering Financial Innovation​",
+      "summary": "Open Source, Multi-cloud Grid Computing with Armonik",
+      "description": "Sharing on the key design decisions, overall architecture of Armonik, an open source grid computing and orchestration solution designed to leverage existing Kubernetes infrastructure. Armonik offers a fully-scalable approach to high-performance grid computing on the cloud.​",
+      "date": "17/11/2023",
+      "time": "13:30 - 13:45"
+    },
+    {
+      "id": 21,
       "entityId": 2,
       "speakerId": 9,
       "name": "ALTO Sustainability",
@@ -205,7 +216,7 @@
       "time": "14:00 - 14:15"
     },
     {
-      "id": 21,
+      "id": 22,
       "entityId": 1,
       "speakerId": 0,
       "name": "Client Journey Topic 2",
@@ -215,7 +226,7 @@
       "time": "14:30 - 15:00"
     },
     {
-      "id": 22,
+      "id": 23,
       "entityId": 6,
       "speakerId": 8,
       "name": "Indosuez",
@@ -225,7 +236,7 @@
       "time": "15:00 - 15:15"
     },
     {
-      "id": 23,
+      "id": 24,
       "entityId": 3,
       "speakerId": 7,
       "name": "AZQORE",
@@ -235,7 +246,7 @@
       "time": "15:30 - 15:45"
     },
     {
-      "id": 24,
+      "id": 25,
       "entityId": 4,
       "speakerId": 0,
       "name": "ESG deposit product",
@@ -243,16 +254,5 @@
       "description": "",
       "date": "17/11/2023",
       "time": "16:00 - 16:15"
-    },
-    {
-      "id": 25,
-      "entityId": 4,
-      "speakerId": null,
-      "speakerIds":[15,16],
-      "name": "Empowering Financial Innovation​",
-      "summary": "Open Source, Multi-cloud Grid Computing with Armonik",
-      "description": "Sharing on the key design decisions, overall architecture of Armonik, an open source grid computing and orchestration solution designed to leverage existing Kubernetes infrastructure. Armonik offers a fully-scalable approach to high-performance grid computing on the cloud.​",
-      "date": "17/11/2023",
-      "time": "13:30 - 13:45"
     }
   ]
