@@ -23,6 +23,7 @@ import { LocateUsComponent } from './components/locate-us/locate-us.component';
 import { CalendarControlComponent } from './controls/calendar-control/calendar-control.component';
 import { PdpaTextControlComponent } from './controls/pdpa-text-control/pdpa-text-control.component';
 import { AgendalistCardviewComponent } from './controls/agendalist-cardview/agendalist-cardview.component';
+import { SpeakerControlComponent } from './controls/speaker-control/speaker-control.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AgendalistCardviewComponent } from './controls/agendalist-cardview/agen
     LocateUsComponent,
     CalendarControlComponent,
     PdpaTextControlComponent,
-    AgendalistCardviewComponent
+    AgendalistCardviewComponent,
+    SpeakerControlComponent
   ],
   imports: [
     BrowserAnimationsModule,
