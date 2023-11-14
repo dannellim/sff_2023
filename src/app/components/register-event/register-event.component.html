@@ -37,21 +37,7 @@
         </div>
         <br>
     </div>
-    <div *ngIf="speaker" style="text-align: center;">
-        <hr />
-        <p><b>Speaker</b></p>
-        <div class="center_div">
-            <a href={{speaker.linkedIn}} target=”_blank”>
-                <div class="card" style="max-width: 208px;">
-                    <img class="img-thumbnail" src={{speaker.image}} alt={{speaker.name}}>
-                    <div class="card-body">
-                        <h5 class="card-title">{{speaker.name}}</h5>
-                        <label class="card-text">{{speaker.jobTitle}}</label>
-                        <br>
-                        <label class="card-text">{{speaker.company}}</label>
-                    </div>
-                </div>
-            </a>
-        </div>
+    <div *ngIf="speakers">
+        <app-speaker-control [speakers]="speakers"></app-speaker-control>
     </div>
 </div>

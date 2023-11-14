@@ -44,12 +44,26 @@ export class RegisterEventComponent {
   }
   getSpeaker(): void {
     this.loader.setLoading(true);
-    const id = this.selectedEvent?.speakerId;
-    this.speakerService.getSpeakers().subscribe(speakers => {
-      this.speakers = speakers;
-      this.speaker = this.speakers.find(i => i.id === id);
-      this.loader.setLoading(false);
-     });
+    if (this.selectedEvent?.speakerIds && this.selectedEvent?.speakerIds.length > 0) {
+      this.speakerService.getSpeakers().subscribe(speakers => {
+        for (var i = 0; i < this.selectedEvent!.speakerIds.length; i++) {
+          var speaker = speakers.find(x => x.id === this.selectedEvent?.speakerIds[i]);
+          if (speaker) {
+            this.speakers?.push(speaker);
+          }
+        }
+        this.loader.setLoading(false);
+      });
+    } else {
+      const id = this.selectedEvent?.speakerId;
+      this.speakerService.getSpeakers().subscribe(speakers => {
+        this.speaker = speakers.find(i => i.id === id);
+        if (this.speaker) {
+          this.speakers.push(this.speaker);
+        }
+        this.loader.setLoading(false);
+      });
+    }
   }
   contact: Register = {
     email: '', name: '', eventTitle: '', eventId: 0
