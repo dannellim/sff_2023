@@ -146,7 +146,7 @@
     {
       "id": 19,
       "name": "Benjamin Longhi​",
-      "image": "/assets/speakers/blank.png",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/blank.png",
       "linkedIn": "",
       "jobTitle": "",
       "company": "Crédit Agricole CIB"
@@ -154,7 +154,7 @@
     {
       "id": 20,
       "name": "Othmane Ktiouet",
-      "image": "/assets/speakers/othmane_ktiouet.jpg",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/othmane_ktiouet.jpg",
       "linkedIn": "",
       "jobTitle": "",
       "company": "Crédit Agricole CIB"
