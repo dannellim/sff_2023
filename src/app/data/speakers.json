@@ -132,7 +132,7 @@
       "name": "Nancy Cheng",
       "image": "https://media.licdn.com/dms/image/C4D03AQE0NkpP2cDWXw/profile-displayphoto-shrink_400_400/0/1653554872101?e=1704326400&v=beta&t=akSXTSlJznuI22cSRcxg0AemuX8h7BXxUH7k8E3ZMqU",
       "linkedIn": "https://www.linkedin.com/in/nancy-cheng-828b756/",
-      "jobTitle": "Head of Technology, Media and Telecom, Asia-Pacific",
+      "jobTitle": "Head of Technology, Media and Telecom, Asia-Pacific​",
       "company": "Crédit Agricole CIB"
     },
     {
@@ -140,7 +140,7 @@
       "name": "Kenneth Yuen",
       "image": "https://media.licdn.com/dms/image/C4E03AQGd9gAeUNH2QA/profile-displayphoto-shrink_400_400/0/1659418601789?e=1704326400&v=beta&t=tMQTB4xD2VgUKC7_awclveFJXnAJkhpmrGnjywkWaSE",
       "linkedIn": "https://www.linkedin.com/in/kenneth-yuen-b93b0138",
-      "jobTitle": "TMT Banker | APAC Coverage | Corporate and Investment Banking",
+      "jobTitle": "Technology, Media and Telecom, Asia-Pacific​",
       "company": "Crédit Agricole CIB"
     },
     {
@@ -158,5 +158,46 @@
       "linkedIn": "",
       "jobTitle": "",
       "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 21,
+      "name": "Olivier Trecco",
+      "image": "https://media.licdn.com/dms/image/C5603AQEhXFCvmIUYjg/profile-displayphoto-shrink_400_400/0/1658366396461?e=1705536000&v=beta&t=QDvQPofSQRGeecb7gFEJAPEVUw1AQPkqeYkVjn8xfVA",
+      "linkedIn": "https://www.linkedin.com/in/oliviertrecco/",
+      "jobTitle": "Head of ASEAN, Japan, Pacific ESG Solutions",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 22,
+      "name": "Chong Jin Ong​",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/chong_jin_ong.jpg",
+      "linkedIn": "",
+      "jobTitle": "Head of Corporate Coverage, Singapore​",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 23,
+      "name": "Nicolas Djelalian",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/nicolas_djelalian.jpg",
+      "linkedIn": "",
+      "jobTitle": "Managing Director Asia, Kmogo",
+      "company": "Kmogo"
+    },
+    {
+      "id": 24,
+      "name": "Edouard Cazals De Fabel​",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/chong_jin_ong.jpg",
+      "linkedIn": "",
+      "jobTitle": "Head of Account Officers, Global Commodity Finance Singapore",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 25,
+      "name": "Michelle Tay",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/michelle_tay.jpg",
+      "linkedIn": "",
+      "jobTitle": "Head of Treasury & Trade Finance – Asia",
+      "company": "Mercuria"
     }
+
   ]
