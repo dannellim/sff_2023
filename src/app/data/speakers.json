@@ -92,7 +92,7 @@
       "name": "Antoine Rose",
       "image": "https://media.licdn.com/dms/image/C5603AQFe22b4zjwxLQ/profile-displayphoto-shrink_400_400/0/1651818582435?e=1704326400&v=beta&t=HGJ--FBEdd8RV86MxyRETQFmZxfC2YHSlA-bDSRlG1M",
       "linkedIn": "https://www.linkedin.com/in/antoine-rose-04b74272",
-      "jobTitle": "Head of Sustainable Banking, Asia-Pacific and Middle East",
+      "jobTitle": "Head of Sustainable Investment Banking Asia Pacific and Middle East​",
       "company": "Crédit Agricole CIB"
     },
     {
@@ -100,7 +100,7 @@
       "name": "Roy Chan",
       "image": "https://media.licdn.com/dms/image/C5603AQG3B5fVbIK-Ow/profile-displayphoto-shrink_400_400/0/1516571479251?e=1704326400&v=beta&t=RllnDKoMPUGeuy5tyxG6sm_mWH7A7p9JrNdkoGjvaIM",
       "linkedIn": "https://www.linkedin.com/in/roychansg",
-      "jobTitle": "Sustainable Investment Banking",
+      "jobTitle": "Sustainable Investment Banking, Southeast Asia & Australia​",
       "company": "Crédit Agricole CIB"
     },
     {
@@ -141,6 +141,22 @@
       "image": "https://media.licdn.com/dms/image/C4E03AQGd9gAeUNH2QA/profile-displayphoto-shrink_400_400/0/1659418601789?e=1704326400&v=beta&t=tMQTB4xD2VgUKC7_awclveFJXnAJkhpmrGnjywkWaSE",
       "linkedIn": "https://www.linkedin.com/in/kenneth-yuen-b93b0138",
       "jobTitle": "TMT Banker | APAC Coverage | Corporate and Investment Banking",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 19,
+      "name": "Benjamin Longhi​",
+      "image": "/assets/speakers/blank.png",
+      "linkedIn": "",
+      "jobTitle": "",
+      "company": "Crédit Agricole CIB"
+    },
+    {
+      "id": 20,
+      "name": "Othmane Ktiouet",
+      "image": "/assets/speakers/othmane_ktiouet.jpg",
+      "linkedIn": "",
+      "jobTitle": "",
       "company": "Crédit Agricole CIB"
     }
   ]
