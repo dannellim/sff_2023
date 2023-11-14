@@ -178,16 +178,16 @@
     {
       "id": 23,
       "name": "Nicolas Djelalian",
-      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/nicolas_djelalian.jpg",
-      "linkedIn": "",
-      "jobTitle": "Managing Director Asia, Kmogo",
-      "company": "Kmogo"
+      "image": "https://media.licdn.com/dms/image/C5603AQHDt0riKqW9QA/profile-displayphoto-shrink_800_800/0/1517356081093?e=1705536000&v=beta&t=DP2CQttwdmoqYo3D_SYFnlBX8GnZlANX6N-jqrcFvmw",
+      "linkedIn": "https://www.linkedin.com/in/nicolas-djelalian-a3770b106/",
+      "jobTitle": "Managing Director Asia",
+      "company": "Komgo"
     },
     {
       "id": 24,
       "name": "Edouard Cazals De Fabel​",
-      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/chong_jin_ong.jpg",
-      "linkedIn": "",
+      "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/edouard_cazals.jpg",
+      "linkedIn": "https://www.linkedin.com/in/edouard-cazals-de-fabel-379a2b16/",
       "jobTitle": "Head of Account Officers, Global Commodity Finance Singapore",
       "company": "Crédit Agricole CIB"
     },
@@ -195,7 +195,7 @@
       "id": 25,
       "name": "Michelle Tay",
       "image": "https://raw.githubusercontent.com/dannellim/sff_2023/main/src/assets/speakers/michelle_tay.jpg",
-      "linkedIn": "",
+      "linkedIn": "https://www.linkedin.com/in/michelle-tay-mi-xue-9495397/",
       "jobTitle": "Head of Treasury & Trade Finance – Asia",
       "company": "Mercuria"
     }
