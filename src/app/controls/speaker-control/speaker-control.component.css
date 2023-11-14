@@ -1,0 +1,9 @@
+.center_div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.speaker-div {
+  text-align: center;
+}

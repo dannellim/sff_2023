@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Speaker } from 'src/app/models/speaker';
 
 @Component({
   selector: 'app-speaker-control',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./speaker-control.component.css']
 })
 export class SpeakerControlComponent {
-
+  @Input() speakers: Speaker[] = [];
 }

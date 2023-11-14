@@ -64,6 +64,9 @@ export class EventDetailsComponent {
       this.speakerService.getSpeakers().subscribe(speakers => {
         this.speakers = speakers;
         this.speaker = this.speakers.find(i => i.id === id);
+        if (this.speaker) {
+          this.eventSpeakers?.push(this.speaker);
+        }
         this.loader.setLoading(false);
       });
     }
