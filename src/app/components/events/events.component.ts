@@ -33,6 +33,7 @@ export class EventsComponent {
     this.entityService.getEntities()
       .subscribe(entities => {
         this.entities = entities;
+        this.entities.sort((a, b) => a.name.localeCompare(b.name));
       });
     this.eventService.getEvents().subscribe(events => {
       this.originalEvents = events;
