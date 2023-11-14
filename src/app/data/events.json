@@ -243,5 +243,16 @@
       "description": "",
       "date": "17/11/2023",
       "time": "16:00 - 16:15"
+    },
+    {
+      "id": 15,
+      "entityId": 4,
+      "speakerId": null,
+      "speakerIds":[15,16],
+      "name": "Empowering Financial Innovation​",
+      "summary": "Open Source, Multi-cloud Grid Computing with Armonik",
+      "description": "Sharing on the key design decisions, overall architecture of Armonik, an open source grid computing and orchestration solution designed to leverage existing Kubernetes infrastructure. Armonik offers a fully-scalable approach to high-performance grid computing on the cloud.​",
+      "date": "17/11/2023",
+      "time": "13:30 - 13:45"
     }
   ]
