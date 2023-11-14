@@ -7,3 +7,12 @@
 .speaker-div {
   text-align: center;
 }
+
+.img-thumbnail {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 16px;
+    border-radius: 50%;
+    height: 152px;
+    width: 152px;
+}
