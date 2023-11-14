@@ -66,6 +66,7 @@ export class EventsComponent {
       times.push(events[i].time)
     }
     this.times = times.filter((date, i, self) => self.findIndex(d => d === date) === i);
+    this.times.sort();
   }
   onEntityChange(value: any) {
     this.selectedEntity = value.target.value;
