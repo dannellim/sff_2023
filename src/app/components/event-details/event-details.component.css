@@ -3,6 +3,10 @@ h6 {
     margin-top: 8px;
 }
 
+.event_text {
+  white-space: pre-line;
+}
+
 .speaker {
     display: inline-block;
 }
