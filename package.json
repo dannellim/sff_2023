@@ -24,7 +24,9 @@
     "@zxing/ngx-scanner": "^17.0.1",
     "add-to-calendar-button": "^2.4.3",
     "angularx-qrcode": "^17.0.0",
+    "n": "^9.2.3",
     "rxjs": "~7.8.0",
+    "stable": "^0.1.8",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.4"
   },
